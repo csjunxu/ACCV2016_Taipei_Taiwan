@@ -1,0 +1,1679 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0069)https://book.hongkongairlines.com/hxet/reservation/OrderGeneration.do -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">    
+ 
+<meta name="author" content="travelsky">
+
+
+<!--修改为HTTPS，modify by wj-->
+
+
+
+<meta name="WT.si_n" content="Ticketbooking;Ticketbookingbaggage;Ticketbookingselectseat">
+<meta name="WT.si_p" content="ReviewOrder;ReviewOrder;ReviewOrder">
+
+<style type="text/css">
+#ecashfrag {
+	font-weight: bold;
+	font-size: 25px;
+	text-align: left;
+	padding: 10px 30px 5px 20px;
+}
+</style>
+<title>香港航空</title>
+<link href="./香港航空_files/insideout_TW.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./香港航空_files/jquery.flexbox.css">
+<link rel="stylesheet" type="text/css" href="./香港航空_files/jquery.ui.datepicker.css">
+<script type="text/javascript" src="./香港航空_files/webtrends.hm.js.下载"></script><script async="" src="./香港航空_files/analytics.js.下载"></script><script async="" src="./香港航空_files/webtrends.min.js.下载"></script><script type="text/javascript" src="./香港航空_files/jquery.js.下载"></script>
+<script type="text/javascript" src="./香港航空_files/jquery.ui.core.min.js.下载"></script>
+<script type="text/javascript" src="./香港航空_files/jquery.ui.widget.min.js.下载"></script>
+<script type="text/javascript" src="./香港航空_files/jquery.ui.accordion.min.js.下载"></script>
+
+<!-- START OF SmartSource Data Collector TAG v10.4.1 -->
+<!-- Copyright (c) 2014 Webtrends Inc.  All rights reserved. -->
+<script type="text/javascript" src="./香港航空_files/webtrends.load.js.下载"></script>
+
+<!-- google tracking code start -->
+<script>
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+	ga('create', 'UA-56330754-1', 'auto');
+	ga('require', 'displayfeatures');
+	ga('send', 'pageview');
+	ga('set', '&uid', '');
+</script>
+<!-- google tracking code end -->
+</head>
+<body class="index">
+	<!-- 引入frontinfos页面 -->
+	
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">    
+ 
+<meta name="author" content="travelsky">
+
+
+
+     
+    <title></title>   
+    <link href="./香港航空_files/ThickBox.css" rel="stylesheet" type="text/css">
+    <script language="javascript" type="text/javascript" src="./香港航空_files/thickbox.js.下载"></script>	
+	<script type="text/javascript">
+	
+	var currencyInfo=[
+	                  {'id':'HKD','name':'港幣 HKD','querystr':'hkd|hongkong|gangbi|港幣|HKD'},
+	                  {'id':'USD','name':'美元 USD','querystr':'usd|meiyuan|美元|USD'},
+	                  {'id':'GBP','name':'英鎊 GBP','querystr':'gbp|yingbang|英鎊|GBP'},
+	                  {'id':'JPY','name':'日圓 JPY','querystr':'jpy|riyuan|日圓|JPY'},
+	                  {'id':'TWD','name':'新台幣 TWD','querystr':'twd|xingtaibi|taibi|新台幣|TWD'},
+	                  {'id':'THB','name':'泰銖 THB','querystr':'thb|taizhu|taizu|泰銖|THB'},
+	                  {'id':'EUR','name':'歐元 EUR','querystr':'eur|ouyuan|歐元|EUR'},
+	                  {'id':'AUD','name':'澳元 AUD','querystr':'aud|aoyuan|澳元|AUD'},
+	                  {'id':'SGD','name':'新加坡元 SGD','querystr':'sgd|xingjiapobi|新加坡元|SGD'},
+	                  {'id':'MYR','name':'馬來西亞令吉 MYR','querystr':'myr|mabi|馬來西亞令吉|MYR'}
+	         ];
+	
+	currencyInfo = [{'id':'HKD','name':'港幣 HKD','querystr':'港幣|HKD'},{'id':'USD','name':'美元 USD','querystr':'美元|USD'},{'id':'GBP','name':'英鎊 GBP','querystr':'英鎊|GBP'},{'id':'JPY','name':'日圓 JPY','querystr':'日圓|JPY'},{'id':'TWD','name':'新臺幣 TWD','querystr':'新臺幣|TWD'},{'id':'THB','name':'泰銖 THB','querystr':'泰銖|THB'},{'id':'EUR','name':'歐元 EUR','querystr':'歐元|EUR'},{'id':'AUD','name':'澳元 AUD','querystr':'澳元|AUD'},{'id':'SGD','name':'新加坡元 SGD','querystr':'新加坡元|SGD'},{'id':'MYR','name':'馬來西亞令吉 MYR','querystr':'馬來西亞令吉|MYR'},{'id':'NZD','name':'紐西蘭元 NZD','querystr':'紐西蘭元|NZD'},{'id':'KRW','name':'韓圓 KRW','querystr':'韓圓|KRW'},{'id':'PHP','name':'菲律賓比索 PHP','querystr':'菲律賓比索|PHP'},];
+	
+	var frontinfo = {
+	"city_text_default":'城市/機場三字碼',
+	"city_input_width":'180',
+	"promotioncode_input_text":'推廣編號',
+	"cabin_text_Y":'經濟艙',
+	"cabin_text_Y_quertstr":'ECONOMY|jingjicang|jjc|經濟艙',
+	"cabin_text_C":'商務艙',
+	"cabin_text_C_quertstr":'BUSINESS|shangwucang|swc|商務艙',
+	"cabin_text_BehindC":'Club Classic',
+	"cabin_text_BehindC_id":'PREMIUM_ECONOMY',
+	"cabin_text_BehindC_quertstr":'Club Classic|shangwuqhoucang|swhc|商務後艙',
+	"cabin_text_FrontC":'Club Premier',
+	"cabin_text_FrontC_id":'BUSINESS',
+	"cabin_text_FrontC_quertstr":'ClubPremier|shangwuqiancang|swqc|商務前艙',	
+	"date_language":'zh-TW',			
+	
+	//PssengerInput Info Tip
+	"InitDSNDateChoiceTip":'特選入園日期',
+	"InitDSNDateChoice":'任何日子',
+	"PassTitle":'稱謂',
+	"InitTitle0":'先生',
+	"InitTitle1":'女士',
+	"InitTitle2":'小姐',
+	"InitMonth1":'1月',
+	"InitMonth2":'2月',
+	"InitMonth3":'3月',
+	"InitMonth4":'4月',
+	"InitMonth5":'5月',
+	"InitMonth6":'6月',
+	"InitMonth7":'7月',
+	"InitMonth8":'8月',
+	"InitMonth9":'9月',
+	"InitMonth10":'10月',
+	"InitMonth11":'11月',
+	"InitMonth12":'12月',
+	"InitAdtChoice":'成人',
+	"InitChdChoice":'兒童',
+	"InitOldChoice":'長者',	
+	"PromoCodeGood":'促銷碼正確',
+	"PromoCodeErr":'促銷碼無效',
+	"MealTitle":'餐食選擇',
+	"BoxLength":'150',
+	
+	"passtravelIdType":'旅遊證件類型',
+	"passregion":'國家或地區',
+	"IssueCountry":'證件簽發地',
+	"passstate":'省/州',
+	
+	"choiceUpPass":'選擇乘機人',
+	"choicebebefic":'選擇受益人',
+	
+	"passport":'護照',
+	"taiwan":'台胞證',
+	"hkandmacau":'港澳通行證',
+	"tomainland":'回鄉證',
+	"totaiwan":'赴台證',
+	
+    "docachina":'中國',
+	"docausa":'美國',
+			
+	//waitboxtext 
+	"waitboxtexttitle":'載入中，請等待...',
+	"waitboxtextmiddle":'直到下一頁顯示前，請不要點擊瀏覽器的更新。',
+	"waitboxtextend":'我們可能最多要2-3秒去完成您的請求。',
+	
+	//New Booking
+	"initInsuranceLinkText":'。',
+	"initInsuranceLinkTextHKExp":'及有關{0}的<a style="color:blue;text-decoration:underline;" class="underline" href="http://www.travelguard.com.hk/travel/hx/hk-declaration.html" target="_blank"><span class="fc3">聲明及授權</span></a>及<a style="color:blue;text-decoration:underline;" class="underline" href="http://www.travelguard.com.hk/travel/hx/hk-policyword-tc.html" target="_blank"><span class="fc3">條款及條文</span></a>。本人明白如不購買保單，可以在以上旅遊保險不選擇[是]。本人同意保單一經簽發，保單是不能取消，所有保費均不能退還。',
+	"initInsuranceLinkTextCNExp":'及有關“碧海藍天”/“無憂遊”的<a style="color:blue;text-decoration:underline;" class="underline" href="http://www.besttrav.com/lvyecps/hkairline/remind.html" target="_blank"><span class ="fc3">提醒及聲明</span></a>及<a style="color:blue;text-decoration:underline;" class="underline" href="http://www.besttrav.com/lvyecps/hkairline/policyandrule.html" target="_blank" ><span class="fc3">保障利益與條款</span></a>。本人明白如不購買旅遊保險，可以在以上旅遊保險選擇[不用,謝謝]。',
+	
+	// emd seat select
+	"exitSeat" : '出口排座位',
+	
+	
+	
+	"captchaCodeHtml" : ""
+		
+
+};
+
+var errorinfo ={
+	"fltnochoice":'很抱歉，請您選擇一個（組）航班',
+	"captchaError":'驗證碼錯誤',
+	"captchaEmpty":'請您輸入驗證碼',
+	"catpchaTimeOut":'驗證碼已失效，請您重新輸入',
+	"EcashNoInput":'很抱歉，請您輸入要消費額eCredit值',
+	"EcashErrorInput":'很抱歉，請您輸入正確的eCredit值',
+	"BankNoInput":'很抱歉，請您選擇銀行',	
+	"SenderEmailNoInput":'很抱歉，請您輸入您的Email',
+	"SenderNameNoInput":'很抱歉，請您輸入您的姓名',
+	"SenderNameFmtErr":'很抱歉，您輸入的姓名中包含有非法字符或敏感字',
+	"FriendEmailNoInput":'很抱歉，請您輸入您好友的Email',
+	"SenderEmailFmtErr":'很抱歉，您的Email輸入格式有誤，請您重新輸入',
+	"FriendEmailFmtErr":'很抱歉，您输入的好友Email格式有误，請您重新輸入',
+	"NoConfirmErr":'很抱歉，請您仔細閱讀協議并確認',
+	"orgcitynochoice":'很抱歉，請您選擇出發城市',
+	"dstcitynochoice":'很抱歉，請您選擇到達城市',
+	"loadinInfo":'網站信息載入中，請稍後...',
+	"travelercounterror":'抱歉，超過最大人數限制，最多只能預定{0}人',
+	"travelerAdultcounterror":'抱歉，成人數不能為0',
+	"retry":'很抱歉， 網站數據出錯，請您重新預定航班。',
+	"cannotusememberdiscount":'由於存在旅客不是您的受益人，所以您不能享受2%的折扣',
+	
+	//PssengerInput Info Tip
+	"AdtTitleNO":'請選擇成人旅客{0}的稱謂',
+	"AdtFirstNameNO":'請輸入成人旅客{0}的名字',
+	"AdtFamilyNameNO":'請輸入成人旅客{0}的姓氏',
+	"AdtPassNameErr":'請正確輸入成人旅客{0}的姓名(只限英文字母，不包含標點符號，如-.&acute;)',
+	"AdtFamilyNameErr":'您輸入的成人旅客{0}的姓氏太短了',
+	"AdtIdNoNO":'請輸入成人旅客{0}的證件號',
+	"AdtIdNoErr":'请正确输入成人旅客{0}的证件号',
+	"AdtExpiryDateNO":'请输入成人旅客{0}的证件有效期',
+	"AdtExpiryDateErr":'请正确输入成人旅客{0}的证件有效期',
+	"AdtCardNoErr":'请正确输入成人旅客{0}的金鹏俱乐部会员号',
+	"AdtBirthdayNO":'请輸入成人旅客{0}的出生日期',
+	"AdtBirthdayErr":'請正確輸入成人旅客{0}的出生日期',
+	"AdtJoinJinPengEmail": '請輸入成人旅客{0}的金鵬註冊郵箱',
+	"AdtJoinJinPengPhoneErr": '請正確輸入成人旅客{0}的金鵬註冊手機號',
+	"AdtJoinJinPengAgree": '請確認成人旅客{0}金鵬註冊聲明',
+	"ChdTitleNO":'請選擇兒童乘客{0}的稱謂',
+	"ChdFirstNameNO":'請輸入兒童乘客{0}的名字',
+	"ChdFamilyNameNO":'請輸入兒童乘客{0}的姓氏',
+	"ChdPassNameErr":'請正確輸入兒童乘客{0}的姓名(只限英文字母，不包含標點符號，如-.&acute;)',
+	"ChdFamilyNameErr":'輸入的兒童乘客{0}的姓氏太短了',
+	"ChdIdNoNO":'請輸入兒童乘客{0}的證件號',
+	"ChdIdNoErr":'請正確輸入兒童乘客{0}的證件號',
+	"ChdExpiryDateNO":'請輸入兒童{0}的證件有效期',
+	"ChdExpiryDateErr":'請正確輸入兒童乘客{0}的證件有效期',
+	"ChdCardNoErr":'請正確輸入兒童乘客{0}的金鵬俱樂部會員號',
+	"ChdBirthdayNO":'請輸入兒童乘客{0}的出生日期',
+	"ChdBirthdayErr":'請正確輸入兒童乘客{0}的出生日期',	
+	"ChdJoinJinPengEmail": '請輸入兒童旅客{0}的金鵬註冊郵箱',
+	"ChdJoinJinPengPhoneErr": '請正確輸入兒童旅客{0}的金鵬註冊手機號',
+	"ChdJoinJinPengAgree": '請確認兒童旅客{0}金鵬註冊聲明',
+	"InfTitleNO":'請選擇嬰兒乘客{0}的稱謂',
+	"InfFirstNameNO":'請輸入嬰兒乘客{0}的名字',
+	"InfFamilyNameNO":'請輸入嬰兒乘客{0}的姓氏',
+	"InfPassNameErr":'請正確輸入嬰兒乘客{0}的姓名(只限英文/拼音字母，不包含標點符號，如-.&acute;)',
+	"InfFamilyNameErr":'輸入的嬰兒乘客{0}的姓氏太短了',
+	"InfIdNoNO":'請輸入嬰兒乘客{0}的證件號',
+	"InfIdNoErr":'請正確輸入嬰兒乘客{0}的證件號',
+	"InfExpiryDateNO":'請輸入嬰兒乘客{0}的證件有效期',
+	"InfExpiryDateErr":'請正確輸入嬰兒乘客{0}的證件有效期',
+	"InfBirthdayNO":'請輸入嬰兒乘客{0}的出生日期',
+	"InfBirthdayErr":'請正確輸入嬰兒乘客{0}的出生日期',
+	"PassNameRepeat":'對不起，您輸入的乘客姓名有重複，請重新輸入',
+	"IdNoRepeat":'對不起，您輸入的證件號有重複，請重新輸入',
+	"CardNoRepeat":'對不起，您輸入的金鵬俱樂部會員號有重複，請重新輸入',
+	"DisneyMaxNumErr":'對不起，您可購買的迪士尼門票數最多為{0}',
+	"LoginPasswordNO":'請輸入您的6位數字密碼',
+	"LoginEmailNO":'請輸入您的金鵬卡號/郵箱',
+	"LoginEmailErr":'請正確輸入您的金鵬卡號/郵箱',
+	"ContactMobileNO":'請輸入手機號',
+	"ContactMobileErr":'請正確輸入手機號',
+	"ContactCountryNO":'請選擇手機號的註冊地區',
+	"ContactEmailNO":'請輸入聯繫電子郵件',
+	"ContactEmailErr":'請正確輸入聯繫電子郵件',
+	"HomePhoneErr":'請正確輸入家庭聯繫電話',
+	"ChoiceInsuranceNO":'請選擇旅遊保險',
+	"InsuranceAgeErr":'旅客的購保年齡必須為2-75周歲',
+	"InsuranceAgeCNErr":'旅客的購保年齡必須為1-81周歲，且同行中至少一位滿足18周歲',
+	"InsuranceConfirmNO":'安心悅遊保險已加入您的訂位中，請確認有關保險聲明才可繼續購買。',
+	"DSNDateChoiceNO":'很抱歉，請選擇迪士尼門票入園日期',
+	"DeclarationConfirmNO":'請確認聲明信息',
+	"UEmailNO":'請輸入電子郵箱',
+	"UEmailErr":'請輸入正確的電子郵箱',
+	"UAreaCodeNO":'請輸入國碼',
+	"UAreaCodeErr":'請輸入正確的國碼',
+	"UTelphoneNO":'請輸入電話號碼',
+	"UTelphoneErr":'請輸入正確的電話',
+	"UPasswordNO":'請輸入密碼',
+	"UPasswordErr":'您輸入的密碼安全太低，請重設',
+	"URefEmailErr":'請輸入正確的推薦人電郵',
+	"UEmailUsedErr":'您輸入的電子郵箱已被使用',
+	"PassWaitingBoxText1":'恭喜您註冊成為香港航空“紫荊會”會員!',
+	"PassWaitingBoxText2":'系統正在為您計算“會員立減” 金額，需時約5-8秒請耐心等待… ',
+	
+	//meal note
+	"MealSaveSuccess":'保存成功',
+	"MealSaveFail":'此航程無餐食',
+	
+	//multicity 
+	"multicityTripCheck":'請完整的選擇您的行程',
+	"multicityTripTimeCheck":'后一個航班的起飛時間必須在前一個航班到達之後',
+	//StopOver
+	"stopOverTripCheck":'請完整的選擇您的行程',
+	"stopOverTripTimeCheck":'后一個航班的起飛時間必須在前一個航班到達之後',
+	//seatselect
+	"seatSelectChooseSeg":'請選擇一個航班',
+	"seatSelectChoosePass":'請選擇一名旅客',
+	"selectcalendar":'請選擇出行日期',
+	
+	//docs	
+	"AdtIdTypeNO":'請選擇成人旅客{0}的證件類型',
+	"AdtNationNO":'請選擇成人旅客{0}的國籍',
+	"AdtIssureNO":'請選擇成人旅客{0}的證件簽發地',
+	"AdtDStreetNO":'請輸入成人旅客{0}的目的地暫住地址街道',
+	"AdtDCityNO":'請輸入成人旅客{0}的目的地暫住地址城市',
+	"AdtDNationNO":'請選擇成人旅客{0}的目的暫住地址國家',
+	"AdtDstateNO":'請輸入成人旅客{0}的目的地暫住地址州或者省',
+	"AdtDpostcodeNO":'請輸入成人旅客{0}的目的地暫住地址的郵政編碼',
+	"AdtRstreetNO":'請輸入成人旅客{0}的當前居住地址街道',
+	"AdtRcityNO":'請輸入成人旅客{0}的當前居住地址城市',
+	"AdtRnationNO":'請選擇成人旅客{0}的當前居住地址國家',
+	"AdtRstateNO":'請輸入成人旅客{0}的當前居住地址的州或者省',
+	"AdtRpastcodeNO":'請輸入成人旅客{0}的當前居住地址的郵政編碼',
+	
+	"ChdIdTypeNO":'請選擇兒童旅客{0}的證件類型',
+	"ChdNationNO":'請選擇兒童旅客{0}的國籍',
+	"ChdIssureNO":'請選擇兒童旅客{0}的證件簽發地',
+	"ChdDStreetNO":'請輸入兒童旅客{0}的目的地暫住地址街道',
+	"ChdDCityNO":'請輸入兒童旅客{0}的目的地暫住地址城市',
+	"ChdDNationNO":'請選擇兒童旅客{0}的目的暫住地址國家',
+	"ChdDstateNO":'請輸入兒童旅客{0}的目的地暫住地址州或者省',
+	"ChdDpostcodeNO":'請輸入兒童旅客{0}的目的地暫住地址的郵政編碼',
+	"ChdRstreetNO":'請輸入兒童旅客{0}的當前居住地址街道',
+	"ChdRcityNO":'請輸入兒童旅客{0}的當前居住地址城市',
+	"ChdRnationNO":'請選擇兒童旅客{0}的當前居住地址國家',
+	"ChdRstateNO":'請輸入兒童旅客{0}的當前居住地址的州或者省',
+	"ChdRpastcodeNO":'請輸入兒童旅客{0}的當前居住地址的郵政編碼',
+	"PopupConfirmDeclaration":'很抱歉，請您仔細閱讀以上航班及旅客信息并確認',
+	
+	"RefundContactNameNO":'請填寫連絡人姓名',
+	"RefundContactPhoneNO":'請填寫聯繫電話',
+	"RefundContactEmailNO":'請填寫聯繫郵箱',
+	"RefundContactNameErr":'連絡人姓名格式錯誤',
+	"RefundContactEmailErr":'聯繫郵箱格式錯誤',
+	"RefundContactPhoneErr":'聯繫電話格式錯誤',
+	"RefundCheckboxNO":'請選擇需要退票的旅客',
+	"RefundUploadFileNO":'請選擇附件',
+	"RefundUploadFileMax":'附件數量僅限5個以內，支援PDF、JPG、PNG格式，大小僅限3MByte以內，文件名字僅限25個字以內。',
+	"RefundUploadFileNameExceed":'超過附件上傳限制',
+	"RefundUploadFileTypeErr":'附件數量僅限5個以內，支援PDF、JPG、PNG格式，大小僅限3MByte以內',
+	"RefundChildLeft":'單獨兒童/嬰兒不能成行,請選擇兒童/嬰兒或者預留一個成人',
+	"RefundRemarkDetailNO":'請填寫備註信息',
+	"RefundRemarkDetailErr": '備註信息長度超過限制',
+	"RefundAgreeClauseNO":'請確認已閱讀相關聲明',
+	"UnusualRefundOfNotAllSeg" : '您所選擇的旅客的航程狀態不一致，請分開申請退票',
+	
+	//New Booking
+	"NewTitleNO":'請選擇您的稱謂',
+	"NewFirstNameNO":'請輸入您的名字',
+	"NewFamilyNameNO":'請輸入您的姓氏',
+	"NewPassNameErr":'請正確輸入您的姓名',
+	"NewFamilyNameErr":'旅客的姓氏至少2個字符',
+	"NewIdNoNO":'請輸入您的證件號',
+	"NewIdTypeNO":'請選擇您的證件類型',
+	"NewNationNO":'請選擇您的國籍',
+	"NewIssureNO":'請選擇您的證件簽發地',
+	"NewDStreetNO":'請輸入您的目的地暫住地址街道',
+	"NewDCityNO":'請輸入您的目的地暫住地址城市',
+	"NewDNationNO":'請選擇您的目的暫住地址國家',
+	"NewDstateNO":'請輸入您的目的地暫住地址州或者省',
+	"NewDpostcodeNO":'請輸入您的目的地暫住地址的郵政編碼',
+	"NewRstreetNO":'請輸入您的當前居住地址街道',
+	"NewRcityNO":'請輸入您的當前居住地址城市',
+	"NewRnationNO":'請選擇您的當前居住地址國家',
+	"NewRstateNO":'請輸入您的當前居住地址的州或者省',
+	"NewRpastcodeNO":'請輸入您的當前居住地址的郵政編碼',
+	"NewIdNoErr":'请正确输入您的证件号',
+	"NewExpiryDateNO":'请输入您的证件有效期',
+	"NewExpiryDateErr":'请正确输入您的证件有效期',
+	"NewCardNoErr":'请正确输入您的金鹏俱乐部会员号',
+	"NewBirthdayNO":'请輸入您的出生日期',
+	"NewBirthdayErr":'請正確輸入您的出生日期',
+	"NewBookingErrorTip":'此頁面存在一個或多個錯誤。 <br />請檢查紅框的輸入，以便繼續進行您的預定。 (10003)'
+};
+	
+
+	</script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#closea").click(function(){
+				tb_remove();
+		});
+	});	
+	</script>
+  
+  		<div id="errorinfodiv" style="display:none;z-index: 999;">
+			<img src="./香港航空_files/hkalogo.jpg" width="221px" height="63px" alt="Hongkong Airlines">
+			<p>&nbsp;</p>	
+			<p class="fs3" style="color:#da2b1b;text-align:center;" id="errinfomation">error information</p>	
+			<p>&nbsp;</p>	
+			<p align="center"><a href="javascript:void(0);" class="rbtn1" id="closea"><span><ins>確 定</ins></span></a></p> 
+		</div>
+	
+
+	
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">    
+ 
+<meta name="author" content="travelsky">
+
+
+
+
+    
+    <title>港航支付</title>
+
+    <!--start:css-->
+    <link type="text/css" rel="stylesheet" href="./香港航空_files/payPopup.css">
+    <!--end:css-->
+
+
+
+<div class="wrapper" style="display:none;z-index: 999;">
+
+    <!--start:popup -->
+    <div class="popup hk" id="popup">
+
+        <div class="popup-hd">
+            <div class="popup-closed" onclick="closed();"></div>
+        </div>
+
+        <div class="popup-con">
+
+            <div class="popup-title">
+                請選用以下其一電子繳費方法
+            </div>
+
+            <div class="popup-tip">
+                <p>&nbsp;&nbsp;&nbsp;温馨提示</p>
+                <p>1) 付款未完成前請勿關閉此頁面，您在銀行端完成付款後，系統會自動為您發出電子機票。</p>
+                <p>2) 銀行頁面以彈窗形式打開，請關掉彈出視窗攔截工具，並確保您的電腦已安裝銀行的ActiveX控件。</p>
+                <p>3) 如您已多次點擊並開啟多個銀行付款視窗，請在選擇其中一介面完成付款後，直接關閉其他銀行視窗。</p>
+            </div>
+
+            <div class="popup-main">
+                <p>如銀行支付介面已提示支付成功，請您選擇“我已付款成功”。</p>
+                <input type="button" class="popup-button" value="已付款成功，發出電子機票。 " onclick="confirmPay();">
+                <p>如不能成功付款，而您的銀行卡未被扣款，請您點擊“返回付款介面”，並重新嘗試付款。</p>
+                <input type="button" class="popup-button" value="返回付款介面，重新選擇銀行。" onclick="rePay()">
+                <p>如您的銀行卡已被扣款，但介面未轉至購票成功介面，請您先到“我的訂單”中查詢訂單狀態是否為<br>“完成購票（已出票）”，如不是，請及時點擊如下按鈕，與我們的客服服務聯絡，或致電我們的客<br>戶服務電話：+852 3916 3666（香港）+86 898 950715（中國大陸）處理。</p>
+                <input type="button" class="popup-button" value="與我們的客戶服務聯絡。" onclick="contact()">
+            </div>
+			
+			<form id="payconfirm" action="https://book.hongkongairlines.com/hxet/pay/payConfirm.do" method="post">
+				<input type="hidden" id="confirmBankid" name="bankinfo" value="">
+				<input type="hidden" id="OrderNO" name="OrderNO" value="201609261618394419"> 
+				<input type="hidden" id="orderNo" name="orderNo" value="201609261618394419"> 
+				<input type="hidden" id="random" name="random" value="">
+				<input type="hidden" id="totalPrice" name="totalPrice" value="1794.0">
+				<input type="hidden" id="currency" name="currency" value="HKD">
+			</form>	
+        </div>
+
+    </div>
+    <!--end:popup -->
+
+</div>
+
+
+<!--start:js-->
+
+<script type="text/javascript">
+
+    
+    document.getElementsByClassName = function(cl) {
+        var retnode = [];
+        var elem = this.getElementsByTagName('*');
+        for (var i = 0; i < elem.length; i++) {
+            if((' ' + elem[i].className + ' ').indexOf(' ' + cl + ' ') > -1) retnode.push(elem[i]);
+        }
+        return retnode;
+    };
+
+    /*
+     Developed by Robert Nyman, http://www.robertnyman.com
+     Code/licensing: http://code.google.com/p/getelementsbyclassname/
+    */
+    var getElementsByClassName = function (className, tag, elm){
+        if (document.getElementsByClassName) {
+            getElementsByClassName = function (className, tag, elm) {
+                elm = elm || document;
+                var elements = elm.getElementsByClassName(className),
+                        nodeName = (tag)? new RegExp("\\b" + tag + "\\b", "i") : null,
+                        returnElements = [],
+                        current;
+                for(var i=0, il=elements.length; i<il; i+=1){
+                    current = elements[i];
+                    if(!nodeName || nodeName.test(current.nodeName)) {
+                        returnElements.push(current);
+                    }
+                }
+                return returnElements;
+            };
+        }
+        else if (document.evaluate) {
+            getElementsByClassName = function (className, tag, elm) {
+                tag = tag || "*";
+                elm = elm || document;
+                var classes = className.split(" "),
+                        classesToCheck = "",
+                        xhtmlNamespace = "http://www.w3.org/1999/xhtml",
+                        namespaceResolver = (document.documentElement.namespaceURI === xhtmlNamespace)? xhtmlNamespace : null,
+                        returnElements = [],
+                        elements,
+                        node;
+                for(var j=0, jl=classes.length; j<jl; j+=1){
+                    classesToCheck += "[contains(concat(' ', @class, ' '), ' " + classes[j] + " ')]";
+                }
+                try	{
+                    elements = document.evaluate(".//" + tag + classesToCheck, elm, namespaceResolver, 0, null);
+                }
+                catch (e) {
+                    elements = document.evaluate(".//" + tag + classesToCheck, elm, null, 0, null);
+                }
+                while ((node = elements.iterateNext())) {
+                    returnElements.push(node);
+                }
+                return returnElements;
+            };
+        }
+        else {
+            getElementsByClassName = function (className, tag, elm) {
+                tag = tag || "*";
+                elm = elm || document;
+                var classes = className.split(" "),
+                        classesToCheck = [],
+                        elements = (tag === "*" && elm.all)? elm.all : elm.getElementsByTagName(tag),
+                        current,
+                        returnElements = [],
+                        match;
+                for(var k=0, kl=classes.length; k<kl; k+=1){
+                    classesToCheck.push(new RegExp("(^|\\s)" + classes[k] + "(\\s|$)"));
+                }
+                for(var l=0, ll=elements.length; l<ll; l+=1){
+                    current = elements[l];
+                    match = false;
+                    for(var m=0, ml=classesToCheck.length; m<ml; m+=1){
+                        match = classesToCheck[m].test(current.className);
+                        if (!match) {
+                            break;
+                        }
+                    }
+                    if (match) {
+                        returnElements.push(current);
+                    }
+                }
+                return returnElements;
+            };
+        }
+        return getElementsByClassName(className, tag, elm);
+    };
+
+
+    var TINY={};
+    function T$(i){return document.getElementById(i)}
+    TINY.box=function(){
+        var p,m,b,fn,ic,iu,iw,ih,ia,f=0;
+        return{
+            show:function(c,u,w,h,a,t){
+                if(!f){
+                    p=document.createElement('div'); p.id='tinybox';
+                    m=document.createElement('div'); m.id='tinymask';
+                    b=document.createElement('div'); b.id='tinycontent';
+                    document.body.appendChild(m); document.body.appendChild(p); p.appendChild(b);
+                    window.onresize=TINY.box.resize; f=1;
+                    //m.onclick=TINY.box.hide;
+                }
+                if(!a&&!u){
+                    p.style.width=w?w+'px':'auto'; p.style.height=h?h+'px':'auto';
+                    p.style.backgroundImage='none'; b.innerHTML=c
+                }else{
+                    b.style.display='none'; p.style.width=p.style.height='100px'
+                }
+                this.mask();
+                ic=c; iu=u; iw=w; ih=h; ia=a; this.alpha(m,1,50,3);
+                if(t){setTimeout(function(){TINY.box.hide()},1000*t)}
+
+            },
+            fill:function(c,u,w,h,a){
+                if(u){
+                    p.style.backgroundImage='';
+                    var x=window.XMLHttpRequest?new XMLHttpRequest():new ActiveXObject('Microsoft.XMLHTTP');
+                    x.onreadystatechange=function(){
+                        if(x.readyState==4&&x.status==200){TINY.box.psh(x.responseText,w,h,a)}
+                    };
+                    x.open('GET',c,1); x.send(null)
+                }else{
+                    this.psh(c,w,h,a)
+                }
+            },
+            psh:function(c,w,h,a){
+                if(a){
+                    if(!w||!h){
+                        var x=p.style.width, y=p.style.height; b.innerHTML=c;
+                        p.style.width=w?w+'px':''; p.style.height=h?h+'px':'';
+                        b.style.display='';
+                        w=parseInt(b.offsetWidth); h=parseInt(b.offsetHeight);
+                        b.style.display='none'; p.style.width=x; p.style.height=y;
+                    }else{
+                        b.innerHTML=c
+                    }
+                    this.size(p,w,h)
+                }else{
+                    p.style.backgroundImage='none'
+                }
+            },
+            hide:function(){
+                TINY.box.alpha(p,-1,0,3)
+            },
+            resize:function(){
+                TINY.box.pos(); TINY.box.mask()
+            },
+            mask:function(){
+                m.style.height=TINY.page.total(1)+'px';
+                m.style.width=''; m.style.width=TINY.page.total(0)+'px'
+            },
+            pos:function(){
+                var t=(TINY.page.height()/2)-(p.offsetHeight/2); t=t<10?10:t;
+                p.style.top=(t+TINY.page.top())+'px';
+                p.style.left=(TINY.page.width()/2)-(p.offsetWidth/2)+'px'
+            },
+            alpha:function(e,d,a){
+                clearInterval(e.ai);
+                if(d==1){
+                    e.style.opacity=0; e.style.filter='alpha(opacity=0)';
+                    e.style.display='block'; this.pos()
+                }
+                e.ai=setInterval(function(){TINY.box.ta(e,a,d)},20)
+            },
+            ta:function(e,a,d){
+                var o=Math.round(e.style.opacity*100);
+                if(o==a){
+                    clearInterval(e.ai);
+                    if(d==-1){
+                        e.style.display='none';
+                        e==p?TINY.box.alpha(m,-1,0,2):b.innerHTML=p.style.backgroundImage=''
+                    }else{
+                        e==m?this.alpha(p,1,100):TINY.box.fill(ic,iu,iw,ih,ia)
+                    }
+                }else{
+                    var n=Math.ceil((o+((a-o)*.5))); n=n==1?0:n;
+                    e.style.opacity=n/100; e.style.filter='alpha(opacity='+n+')'
+                }
+            },
+            size:function(e,w,h){
+                e=typeof e=='object'?e:T$(e); clearInterval(e.si);
+                var ow=e.offsetWidth, oh=e.offsetHeight,
+                        wo=ow-parseInt(e.style.width), ho=oh-parseInt(e.style.height);
+                var wd=ow-wo>w?0:1, hd=(oh-ho>h)?0:1;
+                e.si=setInterval(function(){TINY.box.ts(e,w,wo,wd,h,ho,hd)},20)
+            },
+            ts:function(e,w,wo,wd,h,ho,hd){
+                var ow=e.offsetWidth-wo, oh=e.offsetHeight-ho;
+                if(ow==w&&oh==h){
+                    clearInterval(e.si); p.style.backgroundImage='none'; b.style.display='block'
+                }else{
+                    if(ow!=w){var n=ow+((w-ow)*.5); e.style.width=wd?Math.ceil(n)+'px':Math.floor(n)+'px'}
+                    if(oh!=h){var n=oh+((h-oh)*.5); e.style.height=hd?Math.ceil(n)+'px':Math.floor(n)+'px'}
+                    this.pos()
+                }
+            }
+
+        }
+    }();
+    TINY.page=function(){
+        return{
+            top:function(){return document.documentElement.scrollTop||document.body.scrollTop},
+            width:function(){return self.innerWidth||document.documentElement.clientWidth||document.body.clientWidth},
+            height:function(){return self.innerHeight||document.documentElement.clientHeight||document.body.clientHeight},
+            total:function(d){
+                var b=document.body, e=document.documentElement;
+                return d?Math.max(Math.max(b.scrollHeight,e.scrollHeight),Math.max(b.clientHeight,e.clientHeight)):
+                        Math.max(Math.max(b.scrollWidth,e.scrollWidth),Math.max(b.clientWidth,e.clientWidth))
+            }
+        }
+    }();
+
+	function confirmPay(){
+	   TINY.box.hide();
+       document.getElementById("payconfirm").submit();
+    };
+    function rePay(){
+        TINY.box.hide();
+    };
+    function contact(){
+    	TINY.box.hide();
+        window.location.href="http://www.hongkongairlines.com/zh_HK/contactus";
+    };
+    function closed(){
+        TINY.box.hide();
+    }
+
+</script>
+
+
+	<!--END-->
+	
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">    
+ 
+<meta name="author" content="travelsky">
+
+
+
+
+<title>warming</title>
+
+<!--start:css-->
+<link type="text/css" rel="stylesheet" href="./香港航空_files/payPopup.css">
+<style type="text/css">
+.tmaskOfSessionOut {
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #555;
+	z-index: 999998;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50 );
+}
+
+.tboxOfSessionOut {
+	position: absolute;
+	display: none;
+	background: #fff no-repeat 50% 50%;
+	z-index: 999999;
+}
+
+#popup-hd {
+	height:20px;
+}
+
+</style>
+<!--end:css-->
+
+
+<div class="wrapper" style="display:none;z-index: 999999;">
+	<!--start:popup -->
+	<div id="updateCabinConfirmpopup" style="width:630px;height:400px;">
+		<div id="TB_window_ofsession" style="width: 625px;height:395px;display:block;position: inherit;+position: relative;">
+			<div id="TB_title_ofsession">
+				<div id="TB_ajaxWindowTitle_ofsession"></div>
+				<div id="TB_closeAjaxWindow_ofsession"></div>
+			</div>
+			<div id="timeIsNotOut">
+				<div id="TB_ajaxContent_ofsession" style="width:610px;height:380px">
+					<img src="./香港航空_files/hkalogo.jpg" width="221px" height="63px" alt="Hongkong Airlines">
+					<p>&nbsp;</p>
+					<p class="fs3 firstText" style="color:#da2b1b;text-align:left; line-height:20px;" id="errinfomation">
+					                 
+									     抱歉！ 升艙的名額剛剛用盡。
+							        
+							        
+									 
+					</p>
+					<p>&nbsp;</p>
+					<p align="center">
+					        <a href="javascript:combackfun();" class="rbtn1" id="comeBackBtn"><span><ins>返回重新訂票</ins></span></a>
+					        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					        <a href="javascript:closed();" class="rbtn1" id="continueBtn"><span><ins>繼續出票</ins></span></a>
+					</p>
+					<p>&nbsp;</p>
+					<p>
+						  請注意：由于商務艙和經濟艙的設計安排不同，您選擇參與升艙活動之後，系統會自動取消您之前選擇的“加長腿部空間座位”和座位號，但是我們會爲您保留您之前選擇的“預付費行李”和“特殊餐食要求”服務。升艙結果揭曉後，建議您致電呼叫中心（中國內地950715 中國香港/海外地區+852 3916 3666）進行再次確認。
+					</p>
+					</div>
+					
+			</div>
+		</div>	
+	</div>
+</div>
+<!--end:popup -->
+
+
+
+<!--start:js-->
+<script type="text/javascript" src="./香港航空_files/KeepSessionAlive.js.下载"></script>
+<script type="text/javascript">
+    function combackfun(){
+         TINY.box.hide();
+        window.location.href='http://www.hongkongairlines.com/';
+    }
+
+</script>
+
+
+
+
+
+
+
+
+	
+
+	<div id="mainboxall">
+		<div class="top" style="z-index: 999;">
+			
+
+
+
+
+<link href="./香港航空_files/insideout_TW.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./香港航空_files/roller.js.下载"></script>
+<script type="text/javascript">
+$(function(){
+	$('#menu_1 li').hover(function(){
+		$(this).children('ul').stop(true,true).show();
+	},function(){
+		$(this).children('ul').stop(true,true).hide();
+	});
+	
+	$('#menu_1 li').hover(function(){
+		$(this).children('div').stop(true,true).show();
+	},function(){
+		$(this).children('div').stop(true,true).hide();
+	});
+});
+</script>
+<script>
+roller.init('menu_1','h',-200,-55,100,20);
+</script>
+<div id="topmenu" style="z-index: 2;">
+	<div class="hka_logo">
+		
+		<span>
+		  <a href="https://book.hongkongairlines.com/hxet/security/pageSecurity.do?page=reservation.top.logo.url">
+		    <img src="./香港航空_files/hkalogo.jpg" width="221" height="63" alt="Hongkong Airlines">
+		  </a>
+	  </span> 
+		<span><img src="./香港航空_files/hklogo.jpg" width="144" height="63" alt="Hongkong airlines"></span> 
+	  <span><img src="./香港航空_files/skylogo.jpg" width="74" height="63" alt="hongkong airlines"></span>
+	</div>
+	
+	
+		<div class="language">
+			<ul>
+				<li><span class="displayarea">&nbsp;</span></li>
+			</ul>
+		</div>
+	
+	<div class="search">&nbsp;</div>
+</div>
+		</div>
+		<div class="clear"></div>
+		<!--20120307 add-->
+		<!-- inside page  20120307 add begin-->
+		<div class="content_inside">
+			<div class="ins_con1">
+				<div class="ins_tit4">
+					<p>
+						<span class="already">
+							選擇日期</span> 
+						<span class="already">
+							選擇航班</span> 
+						<span class="already">
+							乘客資料</span>
+						<span class="cur">
+							支付</span>
+						<span>
+							訂單確認</span>
+					</p>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="ins_par1">
+					<div class="ins_par1_tit1">
+						乘客資訊及行程詳情
+					</div>
+					<div class="ins_par1_con">
+						<table width="100%" border="0" cellpadding="0" cellspacing="0" class="dattbl18">
+							<tbody><tr>
+								<th>乘客姓名</th>
+								<th>聯絡資訊</th>
+							</tr>
+							<tr>
+								<td>
+									<table border="0" cellpadding="0" cellspacing="0" class="dattb20">
+										
+											<tbody><tr>
+												<td>
+													<span class="fc1 fs5">
+														先生&nbsp;
+														XU &nbsp; 
+														JUN</span></td>
+											</tr>
+										
+									</tbody></table>
+								</td>
+								<td>
+									<table border="0" cellpadding="0" cellspacing="0" class="dattbl19">
+										<tbody><tr>
+											<th>
+												電郵:</th>
+											<td>
+												nankaimathxujun@gmail.com</td>
+										</tr>
+										<tr>
+											<th>
+												聯絡號碼:</th>
+											<td>
+												</td>
+										</tr>
+										<tr>
+											<th>
+												手提電話:</th>
+											<td>
+												66115785</td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+						</tbody></table>
+						<!--weiliqun 航段信息-->
+						
+							
+								<div class="yellowtitle">
+									香港
+									&nbsp;
+									至
+									&nbsp;
+									台北
+									
+									<span class="paddingleft35 fc1"> 
+										2016年11月19日 星期六
+									</span>
+								</div>
+								<div class="clear"></div>
+
+								<div class="yellowboard">
+									<table width="100%" border="0" cellpadding="0" cellspacing="0" class="dattb21">
+										<tbody><tr>
+											<td>
+												航班:
+												<span class="fc1 fwb">
+													&nbsp;香港航空
+													&nbsp;&nbsp;HX
+													284</span></td>
+											<td>
+												 
+												</td>
+										</tr>
+									</tbody></table>
+									<table width="100%" border="0" cellpadding="0" cellspacing="0" class="dattb21">
+										<tbody><tr>
+											<td>
+												離境:&nbsp;
+												<span class="fc1 fwb" style="font-size: 16px;">
+													2016-11-19&nbsp;
+													<span style="color:red;">
+														23:05</span></span></td>
+										</tr>
+										<tr>
+											<td>
+												
+													香港,香港國際機場 ,香港特別行政區 ,
+													1 
+												 
+												</td>
+										</tr>
+									</tbody></table>
+									<table width="100%" border="0" cellpadding="0" cellspacing="0" class="dattb21">
+										<tbody><tr>
+											<td>
+												抵達:&nbsp;
+													<span class="fc1 fwb" style="font-size: 16px;">
+														2016-11-20&nbsp;
+															<span style="color:red;">
+																00:50</span></span></td>
+										</tr>
+										<tr>
+											<td>
+												
+													台北,台北桃園國際機場 (TPE),臺灣,
+													2 
+												 
+												</td>
+										</tr>
+									</tbody></table>
+									<table border="0" cellpadding="0" cellspacing="0" class="dattb22">
+										<tbody><tr>
+											<td>
+												飛行時間:</td>
+											<td>
+												1h45m</td>
+										</tr>
+										<tr>
+											<td>
+												客機:</td>
+											<td>
+												空中巴士&nbsp;
+												332</td>
+										</tr>
+										<tr>
+											<td>
+												客艙:</td>
+											<td>
+												
+												經濟客艙
+												
+												</td>
+										</tr>
+										<tr>
+											<td>
+												参考成人累积積分数：</td>
+											<td>
+												411&nbsp;&nbsp;
+												每個乘客</td>
+										</tr>
+										
+										<tr>
+											<td>
+												免費行李許可:</td>
+											<td>
+												20
+												&nbsp;公斤
+												&nbsp;每個乘客
+												</td>
+										</tr>
+									</tbody></table>
+								</div>
+							
+							
+						
+							
+							
+								<!--weiliqun 航段信息-->
+								<div class="graytitle">
+									台北
+									&nbsp;至
+									&nbsp;香港
+									
+									<span class="paddingleft35 fc1"> 
+										2016年11月29日 星期二
+									</span>
+								</div>
+								<div class="clear"></div>
+								<div class="grayboard">
+									<table width="100%" border="0" cellpadding="0" cellspacing="0" class="dattb21">
+										<tbody><tr>
+											<td>
+												航班:
+												<span class="fc1 fwb">
+													&nbsp;香港航空
+													&nbsp;&nbsp;HX
+													253</span></td>
+											<td>
+												 
+												</td>
+										</tr>
+									</tbody></table>
+									<table width="100%" border="0" cellpadding="0" cellspacing="0" class="dattb21">
+										<tbody><tr>
+											<td>
+												離境:&nbsp;
+												<span class="fc1 fwb" style="font-size: 16px;">
+													2016-11-29&nbsp;
+													<span style="color:red;">
+														11:55</span></span></td>
+										</tr>
+										<tr>
+											<td>
+												
+													台北,台北桃園國際機場 (TPE),臺灣,
+													2 
+												 
+												</td>
+										</tr>
+									</tbody></table>
+									<table width="100%" border="0" cellpadding="0" cellspacing="0" class="dattb21">
+										<tbody><tr>
+											<td>
+												抵達:&nbsp;
+												<span class="fc1 fwb" style="font-size: 16px;">
+													2016-11-29&nbsp;
+													<span style="color:red;">
+														13:45</span></span></td>
+										</tr>
+										<tr>
+											<td>
+												
+													香港,香港國際機場 ,香港特別行政區 ,
+													1 
+												 
+												</td>
+										</tr>
+									</tbody></table>
+									<table border="0" cellpadding="0" cellspacing="0" class="dattb22">
+										<tbody><tr>
+											<td>
+												飛行時間:</td>
+											<td>
+												1h50m</td>
+										</tr>
+										<tr>
+											<td>
+												客機:</td>
+											<td>
+												空中巴士
+												&nbsp;333</td>
+										</tr>
+										<tr>
+											<td>
+												客艙:</td>
+											<td>
+												
+												經濟客艙
+												
+												</td>
+										</tr>
+										<tr>
+											<td>
+												参考成人累积積分数：</td>
+											<td>
+												411
+												&nbsp;&nbsp;每個乘客</td>
+										</tr>
+										
+										<tr>
+											<td>
+												免費行李許可:</td>
+											<td>
+												20
+												&nbsp;公斤
+												&nbsp;每個乘客
+												</td>
+										</tr>
+									</tbody></table>
+									<div class="clear"></div>
+								</div>
+							
+						
+						
+						<!--weiliqun 机票价格信息-->
+						
+						
+							<div class="grayprice">
+								
+								
+									HKD 1,574
+								
+							</div>
+						
+
+						<!--weiliqun餐食和座位信息-->
+						
+						<!--weiliqun餐食和座位信息-->
+						
+						<div class="grayborder">
+							<!--weiliqun保险-->
+							
+								
+								
+									<!--HK-->
+									<table width="100%" border="0" cellpadding="0" cellspacing="0" class="dattb23">
+										<tbody><tr>
+											<th>
+												旅遊保險-安心悅遊保險</th>
+											<th></th>
+										</tr>
+										<tr>
+											<td>
+												&nbsp;來回
+												* 1</td>
+											<td class="td1">
+												
+												
+													HKD 
+													220.0
+												</td>
+										</tr>
+									</tbody></table>
+								
+							
+							<!--weiliqun保险-->
+							
+							
+							<!--weiliqun门票-->
+						</div>
+						
+						<table width="100%" border="0" cellpadding="0" cellspacing="0" class="dattb25">
+							<tbody><tr>
+								<th>
+									總計</th>
+								<td>
+									
+									
+										HKD 1,794
+									</td>
+							</tr>
+						</tbody></table>
+						
+						<!--各类折扣-->
+						<table width="100%" border="0" cellpadding="0" cellspacing="0" class="dattb24">
+							
+								
+								
+								
+							
+							<tbody><tr>
+								<th class="th3">
+									推廣折扣:</th>
+								<td class="td3">
+									-&nbsp; 
+									
+									
+										HKD 
+										0.0
+									
+								</td>
+							</tr>
+						</tbody></table>
+						<!--各类折扣-->
+						
+						<div class="graybian"></div>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0" class="dattb25">
+							<tbody><tr>
+								<th>
+									總付款金額</th>
+								<td class="td1">
+									
+									
+										HKD 1,794
+									</td>
+							</tr>
+						</tbody></table>
+
+						<!-- 银行展示页面 -->
+						<div class="graybian"></div>
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+	#frag{
+		border-bottom: 1px solid #D9D9D9;
+	    border-left: 1px solid #D9D9D9;
+	     border-right: 1px solid #D9D9D9;
+	     padding:15px 0 15px 20px;
+
+	}
+	#bankTitle{
+		color: #625A5B;
+	    font-size: 12px;
+	    font-weight: bold;
+	    text-align: left;
+	}
+	#bankList{
+		padding-left:20px;
+	}
+</style>
+
+	
+
+
+<div id="bankFrag">
+	<div id="bankTitle" style="padding:10px 0px 0px 20px">
+		請選擇付款方法
+	</div>
+	<div id="bankList" style="width:95%">
+			<table style="width:100%;table-layout:fixed;border:0;" cellpadding="0" cellspacing="0" class="banklist"><tbody><tr><td align="middle" style="width:3%;height:105px;"><input name="radioBankId" type="radio" onclick="setBankId(&quot;PAYDOLLAR-VISA&quot;)" value="PAYDOLLAR-VISA"></td><td valign="middle" style="width:13%;height:105px;"><img src="./香港航空_files/paydollar_VISA.png" style="width:100%;cursor:pointer;" align="left" onclick="setBankId(&quot;PAYDOLLAR-VISA&quot;)" border="0"></td><td valign="middle" style="width:9%;height:105px;">VISA</td><td align="middle" style="width:3%;height:105px;"><input name="radioBankId" type="radio" onclick="setBankId(&quot;PAYDOLLAR-Master&quot;)" value="PAYDOLLAR-Master"></td><td valign="middle" style="width:13%;height:105px;"><img src="./香港航空_files/paydollar_Master.png" style="width:100%;cursor:pointer;" align="left" onclick="setBankId(&quot;PAYDOLLAR-Master&quot;)" border="0"></td><td valign="middle" style="width:9%;height:105px;">萬事達卡</td><td align="middle" style="width:3%;height:105px;"><input name="radioBankId" type="radio" onclick="setBankId(&quot;PAYDOLLAR-AMEX&quot;)" value="PAYDOLLAR-AMEX"></td><td valign="middle" style="width:13%;height:105px;"><img src="./香港航空_files/paydollar_AMEX.png" style="width:100%;cursor:pointer;" align="left" onclick="setBankId(&quot;PAYDOLLAR-AMEX&quot;)" border="0"></td><td valign="middle" style="width:9%;height:105px;">美國運通</td><td align="middle" style="width:3%;height:105px;"><input name="radioBankId" type="radio" onclick="setBankId(&quot;CHINAPAYUPOP&quot;)" value="CHINAPAYUPOP"></td><td valign="middle" style="width:13%;height:105px;"><img border="0" align="left" style="width:100%;cursor:pointer;" src="./香港航空_files/bank-chinapayupop.png" onclick="setBankId(&quot;CHINAPAYUPOP&quot;)" value="CHINAPAYUPOP"></td><td valign="middle" style="width:9%;height:105px;"></td></tr><tr><td align="middle" style="width:3%;height:105px;"><input name="radioBankId" type="radio" onclick="setBankId(&quot;PAYDOLLAR-VCO&quot;)" value="PAYDOLLAR-VCO"></td><td valign="middle" style="width:13%;height:105px;"><img src="./香港航空_files/paydollar_VCO.png" style="width:100%;cursor:pointer;" align="left" onclick="setBankId(&quot;PAYDOLLAR-VCO&quot;)" border="0"></td><td valign="middle" style="width:9%;height:105px;"></td><td align="middle" style="width:3%;height:105px;"><input name="radioBankId" type="radio" onclick="setBankId(&quot;PAYDOLLAR-MP&quot;)" value="PAYDOLLAR-MP"></td><td valign="middle" style="width:13%;height:105px;"><img src="./香港航空_files/paydollar_MP.png" style="width:100%;cursor:pointer;" align="left" onclick="setBankId(&quot;PAYDOLLAR-MP&quot;)" border="0"></td><td valign="middle" style="width:9%;height:105px;"></td><td align="middle" style="width:3%;height:105px;"><input name="radioBankId" type="radio" onclick="setBankId(&quot;ALIPAYOVERSEA&quot;)" value="ALIPAYOVERSEA"></td><td valign="middle" style="width:13%;height:105px;"><img border="0" align="left" style="width:100%;cursor:pointer;" src="./香港航空_files/bank-alipay.png" onclick="setBankId(&quot;ALIPAYOVERSEA&quot;)" value="ALIPAYOVERSEA"></td><td valign="middle" style="width:9%;height:105px;"></td><td style="width:25%;"></td></tr></tbody></table>
+			<input type="hidden" name="bankIdInput" id="fragBankId" value="PAYDOLLAR-VISA">
+	</div>
+	
+</div>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("input[type=radio]").first().trigger("click");
+});
+	
+function setBankId(bankId){
+	$("#fragBankId").attr("value",bankId);
+	var targetBank = $("input[type=radio][value="+bankId+"]")
+	
+	targetBank.attr("checked","checked");
+	$("input[type=radio]").not(targetBank).attr("checked","");
+}
+	
+	
+</script>
+
+
+						<table width="100%" border="0" cellpadding="0" cellspacing="0" class="dattb26">
+							<tbody><tr>
+								<th>
+									 在按下"現在付費"後,請於2小时內完成交易程序.否則是次付款將會自動作廢.</th>
+								<td>
+									<a href="javascript:void(0);" class="rbtn1" id="OPAYMENTCONTINUE">
+										<span><ins>
+											現在付費</ins></span></a></td>
+								<!--<a href="javascript:void(0);" class="rbtn1" id="ACONTINUE"><span><ins>繼續>></ins> </span> </a>-->
+							</tr>
+						</tbody></table>
+
+						
+					</div>
+					<div class="ins_par1_bot"></div>
+				</div>
+			</div>
+			<!-- 引入广告 begin -->
+			
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">    
+ 
+<meta name="author" content="travelsky">
+
+
+
+<!--Sidebar begin-->
+	<div class="ins_sidbar1 noprint">
+	
+	
+		
+		
+		
+			<a class="underline" href="http://www.hongkongairlines.com/zh_HK/flight/check-in" target="_blank">
+				<img src="./香港航空_files/online_checkin_tc.jpg">
+			</a>
+		
+	
+	
+  	
+</div>
+<!--Sidebar end-->
+			<!-- 引入广告 end -->
+		</div>
+		<!-- inside page  20120307 add end -->
+
+
+		<div class="clear"></div>
+		<!-- 引入页尾 -->
+		
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">    
+ 
+<meta name="author" content="travelsky">
+
+
+<div id="bottom" style="z-index:0">
+	<div class="sharelogo noprint">
+		
+	</div>
+	<div class="hkacopelogo noprint" align="left">
+		
+		
+	</div>
+	<div class="clear noprint"></div>
+	<div class="clear noprint"></div>
+	<div class="bottomlink noprint">
+		<span><a href="https://book.hongkongairlines.com/hxet/security/pageSecurity.do?page=reservation.foot.aboutus.url">關於我們</a></span>
+		<span><a href="https://book.hongkongairlines.com/hxet/security/pageSecurity.do?page=reservation.foot.contactus.url">聯繫我們</a></span>
+		<span><a href="https://book.hongkongairlines.com/hxet/security/pageSecurity.do?page=reservation.foot.careers.url">人才招聘</a></span>
+		<span><a href="https://book.hongkongairlines.com/hxet/security/pageSecurity.do?page=reservation.foot.sitemap.url">網站導航</a></span>
+		<span><a href="https://book.hongkongairlines.com/hxet/security/pageSecurity.do?page=reservation.foot.cargo.url">貨運</a></span>
+		<span><a href="https://book.hongkongairlines.com/hxet/security/pageSecurity.do?page=reservation.foot.agencysite.url">代理人網站</a></span>
+		<span><a href="https://book.hongkongairlines.com/hxet/security/pageSecurity.do?page=reservation.foot.faqs.url">常見問題</a></span>
+		<span><a href="https://book.hongkongairlines.com/hxet/security/pageSecurity.do?page=reservation.foot.legal.url">法律事宜</a></span>
+	</div>
+	<div class="clear noprint"></div>
+	<div class="copyright noprint">
+		<span>Copyright ©2016 Hong Kong Airlines Ltd</span>
+	</div>
+	</div>
+	<script type="text/javascript" src="./香港航空_files/a1.js.下载"></script>
+	<script type="text/javascript" src="./香港航空_files/c3.js.下载"></script>
+	
+
+	
+
+		
+		
+		<form id="payment" action="https://book.hongkongairlines.com/hxet/servlet/NetPayPreServlet" method="post" target="_blank">
+			<input type="hidden" id="orderbankid" name="bankinfo" value=""> 
+			<input type="hidden" id="eamount" name="ecashpayamount" value=""> 
+			<input type="hidden" id="OrderNO" name="OrderNO" value="201609261618394419"> 
+			<input type="hidden" id="random" name="random" value=""> 
+			<input type="hidden" id="totalPrice" name="totalPrice" value="1794.0"> 
+			<input type="hidden" id="currency" name="currency" value="HKD">
+		</form>
+		<input type="hidden" id="EcashSaveAmount" value="0.0"> 
+		<input type="hidden" id="PayUpLimit" value="0.0">
+		<input type="hidden" id="showChangeWindowFlag" name="showChangeWindowFlag" value="">
+	</div>
+	
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">    
+ 
+<meta name="author" content="travelsky">
+
+
+
+      
+    <title>Loading...</title>   
+	<link href="./香港航空_files/insideout_TW.css" rel="stylesheet" type="text/css">
+  
+
+<div id="loadingbox" style="display:none">
+	<div class="loadlogo_par">
+		<img src="./香港航空_files/loadlogo_TW.jpg" width="183" height="153" alt="HONG KONG AIRLINES">
+    </div>
+    <dl class="loadinfo_par">
+    	<dt>載入中，請等候...</dt>
+        <dd>直到下一頁顯示前，請不要點擊瀏覽器的更新。</dd>
+        <dd>我們可能要用2-3秒去完成您的請求。</dd>
+ 
+    </dl>
+    <div class="clear"></div>
+</div>
+
+
+
+
+
+
+	<!--
+	Start of DoubleClick Floodlight Tag: Please do not remove
+	Activity name of this tag: Flight Booking Process Page 4 - Payment
+	URL of the webpage where the tag is expected to be placed: https://book.hongkongairlines.com/hxet/reservation/OrderGeneration.do
+	This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+	Creation Date: 11/18/2015
+	-->
+	<script type="text/javascript">
+	var axel = Math.random() + "";
+	var a = axel * 10000000000000;
+	document.write('<iframe src="https://5059207.fls.doubleclick.net/activityi;src=5059207;type=hongk0;cat=flbp006;u20=TW;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+	</script><iframe src="./香港航空_files/activityi.html" width="1" height="1" frameborder="0" style="display:none"></iframe>
+	<noscript>
+	&lt;iframe src="https://5059207.fls.doubleclick.net/activityi;src=5059207;type=hongk0;cat=flbp006;u20=TW;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" frameborder="0" style="display:none"&gt;&lt;/iframe&gt;
+	</noscript>
+	<!-- End of DoubleClick Floodlight Tag: Please do not remove -->
+
+	<script type="text/javascript" src="./香港航空_files/common.js.下载"></script>
+	<script type="text/javascript" src="./香港航空_files/frontinfo.js.下载"></script>
+
+	<script type="text/javascript">
+		var chocie_click = function() {
+		/* 点选支付按钮 
+		this.pay_a_click = function(){
+			//$("#EcashPayAmount").removeClass().addClass("sea_tit1");
+			//$("#ART").removeClass().addClass("sea_tit2");
+			//$("#AMUL").removeClass().addClass("sea_tit2");
+			//$("#enddate").attr("disabled",true);
+			$("#EcashPayAmount").val("OW");
+			$("#bankId").val("OW");
+			
+		};*/
+		this.fold_click = function() {
+			if ($("#searchul").css("display") == "none") {
+				$("#searchul").slideDown("fast");
+				$("#fold").attr("src", "../image/isdp_out/ins_seatit_dot1.jpg");
+			} else {
+				$("#searchul").slideUp("fast");
+				$("#fold")
+						.attr("src", "../image/isdp_out/ins_seatit_dot12.jpg");
+			}
+
+		};
+		this.pay_a_click = function() {
+
+			var amount = $("#EPayAmount").val();
+			var orderbankid = $("#fragBankId").val();
+			if ("" == $("#fragBankId").val()) {
+				errmsg.getErrMsg(errorinfo.BankNoInput);
+				return false;
+			}
+			if (typeof amount == "undefined") {
+				$("#orderbankid").val(orderbankid);
+				$("#confirmBankid").val(orderbankid);
+				$("#eamount").val(0);
+		    
+		    //$("#mainboxall").css("display","none");
+				//$("#loadingbox").css("display","");
+				$("#payment").submit();
+				var redirectTriggered = false;
+	      var payment_channel = $("#orderbankid").val();
+	      if(null == payment_channel || '' == payment_channel) payment_channel = "unknown";
+	      ga('send', 'event', 'booking', 'payment', payment_channel, {'hitCallback':
+	        function() {
+	         redirectTriggered = true;
+	         
+	        }
+	      });
+	      setTimeout(function() {
+	        if (!redirectTriggered) {
+	        }
+	      }, 1500);
+	      
+		    dcsMultiTrack('DCS.dcsuri', '/ticket-booking-funnel/Step6-Pay.htm', 'WT.si_n', 'Ticketbooking', 'WT.si_p', 'Payment', 'WT.bookinggw', payment_channel);
+	      
+	      TINY.box.show(document.getElementById("popup").outerHTML, 0, 0, 0, 1);
+				<!--end-->
+
+				return false;
+			}
+			//alert(orderbankid);
+			if ("" == $("#EPayAmount").val()) {
+				//errmsg.getErrMsg(errorinfo.EcashNoInput);
+				//return false;
+				$("#orderbankid").val(orderbankid);
+				$("#confirmBankid").val(orderbankid);
+				$("#eamount").val(0);
+		    
+		    //$("#mainboxall").css("display","none");
+				//$("#loadingbox").css("display","");
+				$("#payment").submit();
+				
+				var redirectTriggered = false;
+        var payment_channel = $("#orderbankid").val();
+        if(null == payment_channel || '' == payment_channel) payment_channel = "unknown";
+        ga('send', 'event', 'booking', 'payment', payment_channel, {'hitCallback':
+          function() {
+           redirectTriggered = true;
+          }
+        });
+        setTimeout(function() {
+          if (!redirectTriggered) {
+          }
+        }, 1500);
+  	    dcsMultiTrack('DCS.dcsuri', '/ticket-booking-funnel/Step6-Pay.htm', 'WT.si_n', 'Ticketbooking', 'WT.si_p', 'Payment', 'WT.bookinggw', payment_channel);
+				TINY.box.show(document.getElementById("popup").outerHTML, 0, 0, 0, 1);
+				return false;
+			}
+			if ("0" == $("#EPayAmount").val()) {
+				//errmsg.getErrMsg(errorinfo.EcashNoInput);
+				//return false;
+				$("#orderbankid").val(orderbankid);
+				$("#confirmBankid").val(orderbankid);
+				$("#eamount").val(0);
+		    
+		    //$("#mainboxall").css("display","none");
+				//$("#loadingbox").css("display","");
+				$("#payment").submit();
+				
+				var redirectTriggered = false;
+        var payment_channel = $("#orderbankid").val();
+        if(null == payment_channel || '' == payment_channel) payment_channel = "unknown";
+        ga('send', 'event', 'booking', 'payment', payment_channel, {'hitCallback':
+          function() {
+           redirectTriggered = true;
+          }
+        });
+        setTimeout(function() {
+          if (!redirectTriggered) {
+          }
+        }, 1500);
+  	    dcsMultiTrack('DCS.dcsuri', '/ticket-booking-funnel/Step6-Pay.htm', 'WT.si_n', 'Ticketbooking', 'WT.si_p', 'Payment', 'WT.bookinggw', payment_channel);
+				TINY.box.show(document.getElementById("popup").outerHTML, 0, 0, 0, 1);
+				return false;
+			}
+
+			amount = parseInt(amount);
+			if (!checkecashValue(amount)) {
+				errmsg.getErrMsg(errorinfo.EcashErrorInput);
+				return false;
+			}
+			//var necash=Number($("#EPayAmount").val());
+			var necash = amount;
+			if (necash < 0) {
+				errmsg.getErrMsg(errorinfo.EcashErrorInput);
+				return false;
+			}
+			//
+			var saveamount = $("#EcashSaveAmount").val();
+			var canuseamount = $("#PayUpLimit").val();
+			if (necash > saveamount) {
+				errmsg.getErrMsg(errorinfo.EcashErrorInput);
+				return false;
+			}
+			if (necash > canuseamount) {
+				errmsg.getErrMsg(errorinfo.EcashErrorInput);
+				return false;
+			}
+
+			$("#orderbankid").val(orderbankid);
+			$("#confirmBankid").val(orderbankid);
+			$("#eamount").val(amount);
+		  
+		  //$("#mainboxall").css("display","none");
+			//$("#loadingbox").css("display","");
+
+			$("#payment").submit();
+			
+			var redirectTriggered = false;
+        var payment_channel = $("#orderbankid").val();
+        if(null == payment_channel || '' == payment_channel) payment_channel = "unknown";
+        ga('send', 'event', 'booking', 'payment', payment_channel, {'hitCallback':
+          function() {
+           redirectTriggered = true;
+          }
+        });
+        setTimeout(function() {
+          if (!redirectTriggered) {
+          }
+        }, 1500);
+	    dcsMultiTrack('DCS.dcsuri', '/ticket-booking-funnel/Step6-Pay.htm', 'WT.si_n', 'Ticketbooking', 'WT.si_p', 'Payment', 'WT.bookinggw', payment_channel);
+	    
+			TINY.box.show(document.getElementById("popup").outerHTML, 0, 0, 0, 1);
+			return false;
+		};
+	};
+
+	/*------------ ִ�еķ��� ------------------*/
+	var book_workobj = function() {
+
+		var choice_clickobj = new chocie_click();
+
+		this.doWork = function() {
+
+			/*魏立群  test js*/
+
+			/*-----------����Ϊclick�¼�-------------*/
+
+			$("#OPAYMENTCONTINUE").live("click", choice_clickobj.pay_a_click);
+			$("#OPAYMENTCONTINUE").focus();
+			$("#fold").live("click", choice_clickobj.fold_click);
+		};
+
+	};
+
+	/* �ṩ�Ŀɵ��õĶ��� */
+	var book_workjob = new book_workobj();
+	function checkecashValue(Ecash) {
+		if (trim(Ecash) == "") {
+			return false;
+		}
+		var myReg = /^[1-9]\d*$/;
+		return myReg.test(Ecash);
+
+	}
+
+	/*--------------- ���÷�װ�ĺ��� ------------------------*/
+	</script>
+	<script type="text/javascript">
+	$(document)
+			.ready(
+					function() {
+
+						var showChangeWindowFlag = $("#showChangeWindowFlag")
+								.val();
+						if (showChangeWindowFlag != "") {
+							TINY.box
+									.show(
+											document
+													.getElementById("updateCabinConfirmpopup").outerHTML,
+											0, 0, 0, 1);
+						}
+
+						book_workjob.doWork();
+					});
+	</script>
+	<script>
+		function ow(owurl) {
+			var tmp = window.open("about:blank", "", "fullscreen=1")
+			tmp.location = owurl;
+		}
+	</script>
+	
+</body></html>

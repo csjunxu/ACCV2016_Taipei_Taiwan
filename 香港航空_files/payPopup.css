@@ -1,0 +1,224 @@
+@CHARSET "UTF-8";
+
+/*lib-------------------------------------------*/
+.auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ell {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.dib {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*clear float*/
+.clearfix:before, .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+} /* IE < 8 */
+
+/*nav list*/
+.nav-list{
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.nav-list-item {
+    border-left: 1px solid #666;
+    float: left;
+    margin-left: -1px;
+    padding: 0 10px;
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.c-red{
+    color: red;
+}
+
+.t-bold{
+    font-weight: bold;
+}
+
+/*layout-------------------------------------------*/
+.wrapper{
+    background-color: white;
+    width: 100%;
+    min-width: 900px;
+}
+
+.popup{
+    background-color: #f0533b;
+    color: #666;
+    font: 12px \5b8b\4f53;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    width: 800px;/*custom*/
+}
+
+.popup-hd{
+    position: relative;
+    height: 55px;
+}
+
+.popup-closed{
+    background: url("../image/popup_closed.png") no-repeat center center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.popup-con{
+    background: url("../image/popup_bg.png") no-repeat right bottom #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.popup-title{
+    background: url("../image/popup_icon.png") no-repeat left center;
+    font-size: 30px;
+    border-bottom: 1px dotted #f0533b;
+    height: 90px;
+    line-height: 90px;
+    padding-left: 80px;
+}
+
+.popup-tip{
+    text-align: left;
+    border-bottom: 1px dotted #f0533b;
+    font-size: 18px;
+}
+
+.popup-tip p{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.popup-main{
+    padding-bottom: 25px;
+}
+
+.popup-main p{
+    margin-top: 25px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    color: #999;
+}
+
+.popup-button{
+    background: url("../image/popup_button.png") no-repeat center center;
+    color: #ffffff;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 5px;
+    width: 295px;
+    height: 41px;
+    cursor: pointer;
+    outline: none;
+}
+
+#tinybox {
+    position: absolute;
+    display: none;
+    background: #fff no-repeat 50% 50%;
+    z-index: 2000
+}
+
+#tinymask {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #333;
+    z-index: 1500;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}
+
+#tinycontent {
+    background: #fff
+}
+
+.hk{
+    font-family: "Microsoft JhengHei",sans-serif;
+}
+
+.en{
+    font-family: "arial",sans-serif;
+}
+
+.en .popup-title{
+    line-height: 1;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 20px;
+    height: 70px;
+}
+
+.en .popup-tip{
+    font-size: 15px;
+    color: #686868;
+}
+
+.en .popup-tip .t-bold{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.en .popup-button{
+    font-size: 11px;
+}
+
+.seatSelectedInfoTable{
+	width:600px;
+}
+
+.seatSelectedInfoTable td, .seatSelectedInfoTable th{
+	text-align:center;
+	line-height:18px;
+	padding:10px 20px;
+}
+#seatSelectedInfoTD{
+	line-height:normal;
+	padding:0px;
+}
+.seatSelectedInfoA{
+	text-align:center; 
+	margin-top:50px;
+	padding:20px 0px; 
+}
+.seatSelectedInfoA a{
+	/* width:100px; */
+	font-weight:bold;
+	font-size:16px;
+}

@@ -1,0 +1,50 @@
+
+
+(function () {
+    var s = document.createElement('script');
+    var p = "    var i = document.createElement('img');\
+    i.setAttribute('alt', '');\
+    i.setAttribute('height', '1');\
+    i.setAttribute('width', '1');\
+    i.setAttribute('style', 'display: none;');\
+    i.setAttribute('src', 'https://ad.doubleclick.net/ddm/activity/src=5074152;type=sales;cat=nwhatxnj;qty=1;cost=0;u1=;ord=[OrderID]');\
+    document.body.appendChild(i);\
+";
+
+    s.type = 'text/javascript';
+    s.async = true;
+    if (s.textContent) {
+        s.textContent = p;
+    } else {
+        s.text = p;
+    }
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+})();
+
+
+
+
+(function () {
+    var s = document.createElement('script');
+    var p = "    var i = document.createElement('img');\
+    i.setAttribute('alt', '');\
+    i.setAttribute('height', '1');\
+    i.setAttribute('width', '1');\
+    i.setAttribute('style', 'display: none;');\
+    i.setAttribute('src', 'https://cm.g.doubleclick.net/pixel?google_nid=sojern__adx_open_bidder_seat&google_hm=lMdroOVnPQixK5eYusJ0Pg&google_ula=&google_cm&google_sc&sjrn_id=wLOYi_5gN4VgseA2Lb038a1Bvj-_mXVa9iGNkmYdKFE5A5tqWAfkn7Dqwr16vEhk');\
+    document.body.appendChild(i);\
+";
+
+    s.type = 'text/javascript';
+    s.async = true;
+    if (s.textContent) {
+        s.textContent = p;
+    } else {
+        s.text = p;
+    }
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+})();
+
+

@@ -1,0 +1,111 @@
+function KeepSessionAlive(threshold, timeOut, interval, extendSessionUrl, disableFacade, requestedPage,homePage) {
+	var self = this;
+	this.requestedPage = requestedPage;
+	this.iteration = 0;
+	this.threshold = threshold;
+	this.beforeTimeOut = timeOut - threshold;//480
+	this.timeOut = timeOut;
+	this.interval = interval;
+	this.homePage = homePage;
+	this.extendSessionUrl = extendSessionUrl;
+	this.disableFacade = disableFacade;
+	this.init();
+}
+
+KeepSessionAlive.prototype.init = function() {
+	this.iteration++;
+	var self = this;
+//	if (this.iteration == 2) {
+//		this.timeOut = 180;
+//		this.beforeTimeOut = 180 - this.threshold;
+//	}
+	var remainingTime = (this.beforeTimeOut < 0) ? this.timeOut : (this.timeOut - this.beforeTimeOut);
+	this.sessionTimeOut = setTimeout(function() {
+		var displayPopin = true;
+		self.updateDialogTime(remainingTime, self.interval);
+		if (displayPopin) {
+			self.openDialog();
+			$(".tboxOfSessionOut #extendSessionButton").live("click",function() {
+				self.extendSession(this.disableFacade);
+			});
+			$(".tboxOfSessionOut #timeIsNotOut #goHome, .tboxOfSessionOut #timeIsOut #goHome").live("click",function() {
+				self.goToHome();
+			});
+		}
+	}, this.beforeTimeOut * 1000);
+};
+
+KeepSessionAlive.prototype.updateDialogTime = function(time, interval) {
+	var self = this;
+	self.updateUITime(time);
+	this.timer = setInterval(updateTime, interval * 1000);
+
+	function updateTime() {
+		time -= interval;
+		self.updateUITime(time);
+		if (time <= 0) {
+			clearInterval(this.timer);
+			$("div[id='timeIsOut']").css("display", "block");
+			$("div[id='timeIsNotOut']").css("display", "none");
+			//$(".tboxOfSessionOut #timeIsOut").css("display", "block");
+			//$(".tboxOfSessionOut #timeIsNotOut").css("display", "none");
+		}
+	}
+};
+
+KeepSessionAlive.prototype.updateUITime = function(remainingTime) {
+	var minRemaining = Math.ceil(remainingTime / 60);
+	var finalMinRemaining = (minRemaining < 10 ? minRemaining : minRemaining);
+	//var secRemaining = remainingTime % 60;
+	//var finalSecRemaining = (secRemaining < 10 ? "0" + secRemaining : secRemaining);
+	$("span[id='minRemaining']").html(finalMinRemaining);
+	//$("#secRemaining").html(finalSecRemaining);
+	
+	//$(".tboxOfSessionOut #minRemaining").html(finalMinRemaining);
+	//$(".tboxOfSessionOut #secRemaining").html(finalSecRemaining);
+};
+
+KeepSessionAlive.prototype.initLastPopin = function() {
+	this.iteration++;
+	var self = this;
+	this.sessionTimeOut = setTimeout(function() {
+		$("#timeIsOut").css("display", "");
+		$("#timeIsNotOut").css("display", "none");
+		self.openDialog();
+	}, 600000);
+};
+
+KeepSessionAlive.prototype.extendSession = function(disableFacade) {
+	this.closeDialog();
+	if (window.opener != null) {
+        window.opener.closeSessionOutPopup();
+    }
+	$(".tboxOfSessionOut #timeIsOut").css("display", "none");
+	$(".tboxOfSessionOut #timeIsNotOut").css("display", "");
+	clearTimeout(this.sessionTimeOut);
+	clearInterval(this.timer);
+	this.init();
+	$.ajax({
+		dataType: "text",
+		cache: false,
+		type: "POST",
+		url: this.extendSessionUrl,
+		success: function(data) {},
+		error: function(request, error) {}
+	});
+};
+
+KeepSessionAlive.prototype.openDialog = function() {
+	TINYOFSESSION.box.show({html:document.getElementById("popupOfSessionOut").outerHTML,animate:false,close:false});
+};
+KeepSessionAlive.prototype.closeDialog = function() {
+	TINYOFSESSION.box.hide();
+};
+KeepSessionAlive.prototype.goToHome = function() {
+	if (window.opener != null) {
+		window.close();
+		window.opener.goHome();
+	} else {
+		location.href= this.homePage + 'home.do';
+	}
+};

@@ -1,0 +1,840 @@
+/*common functions, variables*/
+var _toS = Object.prototype.toString;
+var _types = {
+        'undefined'         : 'undefined',
+        'number'            : 'number',
+        'boolean'           : 'boolean',
+        'string'            : 'string',
+        '[object Function]' : 'function',
+        '[object RegExp]'   : 'regexp',
+        '[object Array]'    : 'array',
+        '[object Date]'     : 'date',
+        '[object Error]'    : 'error'
+    };
+
+function type(o) {
+    return  _types[typeof o] || _types[_toS.call(o)] || (o?'object':'null');
+}
+
+/*Seems has a problems!!  Suggest use middleTrim*/
+function trim(str) {
+	return str.toString().replace(/(^\s*)|(\s*$)/g, "");  
+}
+
+//Off Middle Blank
+function middleTrim(str){
+    var repStr="";
+    for(var i=0;i < str.length;i++){
+        if(str.substring(i,i+1) != " "){
+           repStr=repStr+str.substring(i,i+1);
+       }
+    }
+	return repStr;
+}
+
+//Off Middle Blank To Stay One
+function middleOneTrim(str){
+    var repStr="";
+    for(var i=0;i < str.length;i++){
+    	var cs=str.substring(i,i+1);
+        if((i >= 1) && cs == " "){
+        	var css=str.substring(i-1,i);
+        	if(css == " "){
+        		continue;
+        	}
+       }
+       repStr=repStr+cs;
+    }
+	return repStr;
+}
+
+function isEmpty(str) {
+  return str == null || trim(str) == "";
+}
+function cnStrCheck(str){
+	return /^[\u4E00-\u9FA5]{1,}$/.test(str)?true:false;
+}
+function cn_en_numStrCheck(str){
+	return /^[A-Za-z0-9\u4E00-\u9FA5]{1,}$/.test(str)?true:false;
+}
+function isSanzima(str){
+	if (isEmpty(str)){
+		return false;
+	}
+	if(str.length == 4){
+		return true;
+	}
+	if (str.length != 3){
+		return false;
+	}
+	if (!is_English(str)){
+		return false;
+	}
+	
+	return true;
+}
+
+// JavaScript Document
+function getObj( name, forceIEBehavior ){
+    var newObj;
+    if ( type(name) == "string" ) {
+        if (document.getElementById) {
+            newObj = document.getElementById(name);
+            if ( newObj == null && forceIEBehavior != null && forceIEBehavior ) {
+                var newObjArray = document.getElementsByName( name );
+                if ( newObjArray != null && newObjArray.length > 0 ) 
+                    newObj = newObjArray[ 0 ];
+            }else{
+                var newObjArray = document.getElementsByName( name );
+                if ( newObjArray != null && newObjArray.length > 0 ) 
+                    newObj = newObjArray[ 0 ];
+            }
+        }
+        else if (document.all) {
+            newObj = document.all[name];
+        }
+        else if (document.layers) {
+            newObj = document.layers[name];
+        }
+    }
+    else
+        newObj = name;
+    return newObj;
+}
+
+function isNull(formUnit){
+	if ( (formUnit == null) || (formUnit.value == null) || (formUnit.value == ""))
+    	return true;
+  	if ((trim(formUnit.value)).length < 1)
+    	return true;
+  	return false;
+}
+
+function is_Chinese(tt) {
+  if (tt.charCodeAt(0) < 0x4e00 || tt.charCodeAt(0) > 0x9fa5)
+    return false;
+  else
+    return true;
+}
+
+function isFloat(strString){
+  var theLen = strString.length;
+  var goodName = true;
+  var dotNum = 0;
+  for (var i = 0 ; i < theLen ; i ++){
+    var theChar = strString.substring(i, i + 1);
+    if ( theChar == "."){
+    	if (dotNum == 0){
+	    	dotNum ++;
+	    } else {
+	    	return false;
+	    }
+	    if (i == 0){
+	    	return false;
+	    }
+    }
+    if ((theChar >= "0") && (theChar <= "9"))   {
+      continue;
+    }
+    else{
+      goodName = false;
+      break;
+    }
+  }
+  return goodName;
+}
+
+function isNumber(strString){
+  var theLen = strString.length;
+  var goodName = true;
+
+  for (var i = 0 ; i < theLen ; i ++){
+    var theChar = strString.substring(i, i + 1);
+    if ((theChar >= "0") && (theChar <= "9")){
+      continue;
+    }
+    else{
+      goodName = false;
+      break;
+    }
+  }
+  return goodName;
+}
+
+function checkTelSimple(tel){
+	if (trim(tel) == ""){
+		return false;
+	}
+	 var i,j,strTemp;
+	 strTemp="0123456789.-+()";
+	 for (i=0;i<tel.length;i++)
+	 {
+	  j=strTemp.indexOf(tel.charAt(i)); 
+	  if (j==-1)
+	  {
+	   return false;
+	  }
+	 }
+	 return true;
+}
+
+function is_English(tt){
+	if(trim(tt)=="")
+		return false;
+	tt=trim(tt);
+	len=tt.length;
+	for (var i = 0 ; i < len ; i ++){
+	 	var theChar = tt.substring(i, i + 1);
+	 	if(is_Chinese(theChar)){
+			return false;					
+		}
+		if ((theChar >= "0") && (theChar <= "9")){
+	   		return false;
+			break;
+	 	}else{
+	   		continue;
+	    }
+  	}
+    if (len > 0){
+    	dd = escape(tt);
+    	if(dd.length!=len){return false;}
+    	indexg = tt.indexOf("/");
+    	if (indexg!=-1){return false;}
+		indexg = tt.indexOf("*");
+    	if (indexg!=-1){return false;}
+    	indexg = tt.indexOf("@");
+    	if (indexg!=-1){return false;}
+    	indexg = tt.indexOf("-");
+    	if (indexg!=-1){return false;}
+    	indexg = tt.indexOf("_");
+    	if (indexg!=-1){return false;}
+    	if(len != 4){
+    		indexg = tt.indexOf("+");
+        	if (indexg!=-1){return false;}
+    	}
+     	indexg = tt.indexOf(".");
+    	if (indexg!=-1){return false;}
+    }else {
+    	return false;
+    }
+	return true;
+}
+function is_EnglishExcludeQuotes(tt){
+	if(trim(tt)=="")
+	return false;
+	tt=trim(tt);
+	len=tt.length;
+	for (var i = 0 ; i < len ; i ++){
+	 	var theChar = tt.substring(i, i + 1);
+	 	if(is_Chinese(theChar)){
+			return false;					
+		}
+		if ((theChar >= "0") && (theChar <= "9")){
+	   		return false;
+			break;
+	 	}else{
+	   		continue;
+	    }
+  	}
+    if (len > 0){
+    	tt=tt.replace(/[\’\‘\＇\,\'\’]/, "");    	
+    	dd = escape(tt);
+    	if(dd.length!=tt.length){return false;}
+    	indexg = tt.indexOf("/");
+    	if (indexg!=-1){return false;}
+		indexg = tt.indexOf("*");
+    	if (indexg!=-1){return false;}
+    	indexg = tt.indexOf("@");
+    	if (indexg!=-1){return false;}
+    	indexg = tt.indexOf("-");
+    	if (indexg!=-1){return false;}
+    	indexg = tt.indexOf("_");
+    	if (indexg!=-1){return false;}
+    	indexg = tt.indexOf("+");
+    	if (indexg!=-1){return false;}
+     	indexg = tt.indexOf(".");
+    	if (indexg!=-1){return false;}
+    }else {
+    	return false;
+    }
+	return true;
+}
+function is_EnglishExcludeUnderline(tt){
+	if(trim(tt)=="")
+	return false;
+	tt=trim(tt);
+	len=tt.length;
+	for (var i = 0 ; i < len ; i ++){
+	 	var theChar = tt.substring(i, i + 1);
+	 	if(is_Chinese(theChar)){
+			return false;					
+		}
+		if ((theChar >= "0") && (theChar <= "9")){
+	   		return false;
+			break;
+	 	}else{
+	   		continue;
+	    }
+  	}
+    if (len > 0){
+    	tt=tt.replace(/[_]/, "");    	
+    	dd = escape(tt);
+    	if(dd.length!=tt.length){return false;}
+    	indexg = tt.indexOf("/");
+    	if (indexg!=-1){return false;}
+		indexg = tt.indexOf("*");
+    	if (indexg!=-1){return false;}
+    	indexg = tt.indexOf("@");
+    	if (indexg!=-1){return false;}
+    	indexg = tt.indexOf("-");
+    	if (indexg!=-1){return false;}
+    	indexg = tt.indexOf("_");
+    	if (indexg!=-1){return false;}
+    	indexg = tt.indexOf("+");
+    	if (indexg!=-1){return false;}
+     	indexg = tt.indexOf(".");
+    	if (indexg!=-1){return false;}
+    }else {
+    	return false;
+    }
+	return true;
+}
+var enNameCheck = function(str){
+	return /^[A-Za-z]{2,}\/[A-Za-z]{1,}$/.test(str)?true:false;
+}
+
+var cnNameCheck =  function(str){
+	return /^[\u4E00-\u9FA5]{2,30}$/.test(str)?true:false;
+}
+
+function checkPassPort(passPort){
+    return /^[A-Za-z0-9]{5,30}$/.test(passPort)?true:false;
+}
+
+function transferdate(str){
+	if (str.length!=8) return false;
+	var year = str.substring(0,4);
+	var month = str.substring(4,6);
+	var date = str.substring(6,8);
+	if(year<2000||year>2050)return false;
+	if(month<1||month>12)return false;
+	var daysOfMonth = new Date(year,month,0).getDate();
+	if(date<1||date>daysOfMonth)return false;
+	return year+"-"+month+"-"+date;
+}
+
+function transferDate_yyyyMMdd(dateStr){
+    var parts = new Array();
+    parts[0] = dateStr.substring(0,4);
+    parts[1] = dateStr.substring(4,6);
+    parts[2] = dateStr.substring(6);
+    var dateObj = new Date(parts[0],parts[1]-1,parts[2]);
+    return dateObj;
+}
+
+function checkDate(str){
+	if (str.length!=8) return false;
+	var year = str.substring(0,4);
+	var month = str.substring(4,6);
+	var date = str.substring(6,8);
+  
+	if(isNaN(year) || isNaN(month) || isNaN(date)){
+		return false;
+	}
+	
+	if(month<1||month>12){
+		return false;
+	}
+	var daysOfMonth = new Date(year,month,0).getDate();
+	if(date<1||date>daysOfMonth){
+		return false;
+	}
+	return true;
+}
+
+function isValidDate(yyyyMMdd) {
+  if(isEmpty(yyyyMMdd)) {
+    return false;
+  }
+  var yyyy = yyyyMMdd.substring(0,4);
+  var mm = yyyyMMdd.substring(4,6);
+  var dd = yyyyMMdd.substring(6,8);
+  if(isNaN(yyyy) || isNaN(mm) || isNaN(dd)){
+  	return false;
+  }
+  
+  var int_yyyy = parseInt(yyyy,10);
+  var int_mm = parseInt(mm,10);
+  var int_dd = parseInt(dd,10);
+  if(isNaN(int_yyyy) || isNaN(int_mm) || isNaN(int_dd)){
+  	return false;
+  }
+  
+  if(int_yyyy>2050 || int_yyyy<1900)
+  		return false;
+  if(int_mm>12 || int_yyyy<1)
+  		return false;
+  if(int_dd>31 || int_yyyy<1)
+  		return false;
+  if (int_mm == 2) {
+    if (!(((int_yyyy % 4 == 0) && (int_yyyy % 100 != 0)) || (int_yyyy % 400 == 0))) {
+      if(int_dd > 28) {
+        return false;	
+      }			
+    } else {
+      if(int_dd > 29) {
+        return false;
+      }
+    }
+  }
+  if(int_mm==4 || int_mm==6|| int_mm==9|| int_mm==11) {
+    if (int_dd > 30) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function getDateStr_yyyyMMdd(date){
+	var s = date.getFullYear() + "";
+	var m = (date.getMonth()+1) + "";
+	if (m.length == 1){
+		s += "0";
+	}
+	s += m;
+	var d = date.getDate() + "";
+	if (d.length == 1){
+		s += "0";
+	}
+	s += d;
+	return s;
+}
+
+function getDateByMilliSeconds(milliSeconds){
+	var startyear = 1970;
+	var startmonth = 1;
+	var startday = 1;
+	var date = new Date();
+	date.setFullYear(startyear, startmonth, startday);
+	date.setTime(0);
+	date.setMilliseconds(milliSeconds);
+	return date;
+}
+
+// if (date1 == date2) return 0; if (date1 < date2) return -1; if (date1 > date2) return 1; 
+function compareDate(date1, date2){
+	if (date1 == null && date2 == null){
+		return 0;
+	}
+	if (date1 == null){
+		return -1;
+	}
+	if (date2 == null){
+		return 1;
+	}
+	if (date1.getFullYear() < date2.getFullYear()){
+		return -1;
+	} else if (date1.getFullYear() == date2.getFullYear()){
+		if (date1.getMonth() < date2.getMonth()){
+			return -1;
+		} else if (date1.getMonth() == date2.getMonth()){
+			if (date1.getDate() < date2.getDate()){
+				return -1;
+			} else if (date1.getDate() == date2.getDate()){
+				return 0;
+			} else {
+				return 1;
+			}
+		} else {
+			return 1;
+		}
+	} else {
+		return 1;
+	}	
+}
+
+function isValidCard(tt) {
+  return tt != null && tt.length == 9 && (parseInt(tt,10)>0) ;
+}
+
+//Date.parse(yyyyMMdd) - Date(yyyy/MM/dd)
+function parseDate(yyyyMMdd) {
+  if( isEmpty(yyyyMMdd) ) {
+    return null;
+  }
+  return new Date(yyyyMMdd.substring(0,4)+ "/" + yyyyMMdd.substring(4,6)+ "/" + yyyyMMdd.substring(6,8));
+}
+
+function isValidChildBirthday(birthday){
+  if( !isValidDate(birthday) ) {
+    return false;
+  }
+  var child_bd = parseDate(birthday); //20070102
+  var now = new Date();
+  var two_years_old = new Date();
+  var twelf_years_old = new Date();
+  two_years_old.setYear(two_years_old.getFullYear() - 2); 
+  twelf_years_old.setYear(twelf_years_old.getFullYear() - 11); 
+
+  if ((child_bd.valueOf()>two_years_old.valueOf()) || (child_bd.valueOf()<twelf_years_old.valueOf())) {
+    return false;
+  }
+  return true;
+}
+
+function isValidElderBirthday(birthday){
+  if( !isValidDate(birthday) ) {
+    return false;
+  }
+  var elder_bd = parseDate(birthday); //20070102
+  var sixtyfive_years_old = new Date();
+  sixtyfive_years_old.setYear(sixtyfive_years_old.getFullYear() - 65); 
+
+  if ( elder_bd.valueOf() > sixtyfive_years_old.valueOf() ) {
+    return false;
+  }
+  return true;
+}
+
+//Get passenger Age
+function getAge(passBirthday){
+  if(isEmpty(passBirthday)||!isValidDate(passBirthday)){
+    return 0;
+  }
+  var birthday = parseDate(passBirthday);
+  var d=new Date();
+  var age = d.getFullYear()-birthday.getFullYear()-((d.getMonth()<birthday.getMonth()|| d.getMonth()==birthday.getMonth() && d.getDate()<birthday.getDate())?1:0);
+  return age;
+}
+
+//Get passenger Age
+function getAgeByDate(appointDateStr, passBirthday){
+  if(isEmpty(appointDateStr)||!isValidDate(appointDateStr)){
+    return 0;
+  }
+  if(isEmpty(passBirthday)||!isValidDate(passBirthday)){
+    return 0;
+  }
+  var d= parseDate(appointDateStr);
+  var birthday = parseDate(passBirthday);
+  var age = d.getFullYear()-birthday.getFullYear()-((d.getMonth()<birthday.getMonth()|| d.getMonth()==birthday.getMonth() && d.getDate()<birthday.getDate())?1:0);
+  return age;
+}
+
+//Get passenger Age Of Day
+function getBetweenDayByDate(appointDateStr, passBirthday){
+  if(isEmpty(appointDateStr)||!isValidDate(appointDateStr)){
+    return 0;
+  }
+  if(isEmpty(passBirthday)||!isValidDate(passBirthday)){
+    return 0;
+  }
+  var d= parseDate(appointDateStr);
+  var birthday = parseDate(passBirthday);
+  
+  var dayMS=1000*60*60*24;
+  var betweenMS=d.getTime()-birthday.getTime();
+  
+  return betweenMS/dayMS;
+}
+
+// parse as 3.1415-->3.14
+function formatFloat(number, pos){
+	return Math.round(number * Math.pow(10, pos)) / Math.pow(10, pos);
+}
+
+function jyabc123(tt){
+    dd = tt; 
+    //es = Number(dd);
+	if (dd.indexOf("%") != -1) { return false;}
+    if (dd.indexOf("@") != -1) { return false;}
+    if (dd.indexOf("+") != -1) { return false;}
+    if (dd.indexOf("-") != -1) { return false;}
+	if (dd.indexOf("_") != -1) { return false;}
+    if (dd.indexOf("*") != -1) { return false;}
+    if (dd.indexOf("/") != -1) { return false;}
+    if (dd.indexOf(".") != -1) { return false;}
+	return true;
+}
+
+function isEmail(str) { 
+	var myReg = /^[a-zA-Z0-9_.-]{1,}@[a-zA-Z0-9_\-]{1,}(\.[a-zA-Z0-9_]{1,}){1,}$/;	
+ 	return myReg.test(str); 
+}
+function isFFPCardNo(str){
+	var myReg = /^[0-9]{10}$/;
+	return myReg.test(str);
+}
+
+function   fixMath(m,   n,   op)   { 
+    var   a   =   (m+ " "); 
+    var   b   =   (n+ " "); 
+    var   x   =   1; 
+    var   y   =   1; 
+    var   c   =   1; 
+    if(a.indexOf( ". ")> 0)   { 
+        x   =   Math.pow(10,   a.length   -   a.indexOf( ". ")   -   1); 
+    } 
+    if(b.indexOf( ". ")> 0)   { 
+        y   =   Math.pow(10,   b.length   -   b.indexOf( ". ")   -   1); 
+    } 
+    switch(op) 
+    { 
+        case   '+ ': 
+        case   '- ': 
+            c   =   Math.max(x,y); 
+            m   =   Math.round(m*c); 
+            n   =   Math.round(n*c); 
+            break; 
+        case   '* ': 
+            c   =   x*y 
+            m   =   Math.round(m*x); 
+            n   =   Math.round(n*y); 
+            break; 
+        case   '/ ': 
+            c   =   Math.max(x,y); 
+            m   =   Math.round(m*c); 
+            n   =   Math.round(n*c); 
+            c   =   1; 
+            break; 
+    } 
+    return   eval( "( "+m+op+n+ ")/ "+c); 
+} 
+
+//Replace All
+String.prototype.replaceAll = function(s1,s2) { 
+    return this.replace(new RegExp(s1,"gm"),s2); 
+}
+
+//Edit Date Format
+function changedate(dateval){
+	var tmp = dateval.replaceAll("-","/");
+	var tmpdate = new Date(tmp);
+	var returnDate = (tmpdate.getFullYear())+((tmpdate.getMonth()+1)>9?""+(tmpdate.getMonth()+1):("0"+(tmpdate.getMonth()+1)))+(tmpdate.getDate()>9?""+tmpdate.getDate():("0"+tmpdate.getDate()));
+	return returnDate;
+}
+
+//IS Number 
+function isNumberStr(str){
+	var pattern = /^[0-9]+$/;
+	return pattern.test(str);
+}
+
+function openWindow(url,name,attr){
+	if(attr==null || attr.length ==0){
+		attr="height=600,width=800,scrollbars=yes,resizable=yes,status=yes";
+	}
+	window.open(url,name,attr);
+}
+
+/*Judge a(A)-z(Z) and 0-9 of 8 place*/
+function checkPromoCode(str){
+	return /^[a-zA-Z0-9]{8,}$/.test(str);
+}
+
+/*Get day by year and month*/
+function getDayByYM(year, month){
+    var date = new Date(year, month, 0);
+    return date.getDate();
+}
+
+/*parse '0'-'9' --> '00'-'09' Other Org String*/
+function getTwoIntString(Str){
+	if(isEmpty(Str)){
+		return "";
+	}else{
+		var onInt=parseInt(Str);
+		if(onInt>9){
+			return Str;
+		}else if(onInt>=0&&onInt<=9){
+			return "0"+Str;
+		}else{
+			return "";
+		}
+	}
+}
+/* 判断是否含有敏感字符 filter sensitive String*/
+function HasSensitiveStr(str){
+        var checkValue =  middleTrim(str);       
+        var len = checkValue.length;
+        var arr = new Array(
+        "action","add" ,"aggregate","all", "alter" ,"after" ,"and", "as",
+        "asc" ,"avg", "avg_row_length" ,"auto_increment" ,"between",
+        "bigint", "bit", "binary" ,"blob" ,
+        "bool", "both", "by" ,"cascade" ,"case" ,"char", "character",
+        "change", "check" ,"checksum" ,"column" ,
+        "columns" ,"comment", "constraint" ,"create" ,
+        "cross","current_date","current_time","current_timestamp",
+        "data","database","databases","date",
+        "datetime","day","day_hour","day_minute" ,
+        "day_second","dayofmonth","dayofweek","dayofyear", 
+        "dec","decimal","default","delayed",
+        "delay_key_write","delete","desc","describe" ,
+        "distinct","distinctrow","double","drop",
+        "end","else","escape","escaped",
+        "enclosed","enum","explain","exists" ,
+        "fields","file","first","float",
+        "float4","float8","flush","foreign" ,
+        "from","for","full","function",
+        "global"," grant"," grants ","group ",
+        "having","heap","high_priority","hour",
+        "hour_minute","hour_second","hosts","identified" ,
+        "ignore","in","index","infile",
+        "inner","insert","insert_id","int",
+        "integer","interval","int1","int2" ,
+        "int3","int4","int8","into",
+        "if","is","isam","join",
+        "key","keys","kill","last_insert_id", 
+        "leading","left","length","like" ,
+        "lines","limit","load","local",
+        "lock","logs","long","longblob",
+        "longtext","low_priority","max","max_rows",
+        "match"," mediumblob","mediumtext","mediumint",
+        "middleint","min_rows","minute","minute_second",
+        "modify","month","monthname","myisam" ,
+        "natural","numeric","no","not",
+        "null","on","optimize","option",
+        "optionally","or","order","outer",
+        "outfile","pack_keys","partial","password",
+        "precision","primary","procedure","process" ,
+        "processlist","privileges","read","real",
+        "references","reload","regexp","rename",
+        "replace","restrict","returns","revoke" ,
+        "rlike","row","rows","second",
+        "select","set","show","shutdown",
+        "smallint","soname","sql_big_tables","sql_big_selects",
+        "sql_low_priority_updates"," sql_log_off","sql_log_update","sql_select_limit" ,
+        "sql_small_result","sql_big_result","sql_warnings","straight_join",
+        "starting","status","string","table",
+        "tables","temporary","terminated","text" ,
+        "then","time","timestamp","tinyblob",
+        "tinytext","tinyint","trailing","to" ,
+        "type","use","using","unique",
+        "unlock","unsigned","update","usage",
+        "values","varchar","variables","varying" ,
+        "varbinary","with","write","when",        
+        "where","year","year_month","zerofill");
+        var arr2=new Array("//","\\","[","]","{","}","+","*","-","|","^","&","?","<",">");
+        var arr3=new Array("//","\\","[","]","{","}","*","-","|","^","&","?","<",">");
+        for(var i =0 ; i< arr.length; i++){        		
+                if(checkValue.toLowerCase()==arr[i].toString()){
+                   return true;
+                }
+        }
+        if(len != 4){
+        	for(var i =0 ; i< arr2.length; i++){        		
+                if(checkValue.toLowerCase().indexOf(arr2[i].toString())!=-1){
+                   return true;
+                }
+        	}
+        }else{
+        	for(var i =0 ; i< arr3.length; i++){        		
+                if(checkValue.toLowerCase().indexOf(arr3[i].toString())!=-1){
+                   return true;
+                }
+        	}
+        }
+        return false;
+    }
+    
+function judgeBrowser(){
+        var Sys = {}; 
+        var ua = navigator.userAgent.toLowerCase(); 
+        var s; 
+        (s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] : 
+        (s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] : 
+        (s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] : 
+        (s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] : 
+        (s = ua.match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0; 
+
+        if (Sys.ie) return "ie"; 
+        if (Sys.firefox) return "firefox"; 
+        if (Sys.chrome) return "chrome"; 
+        if (Sys.opera) return "opera"; 
+        if (Sys.safari) return "safari"; 		
+}
+function captcha_content_gen(){
+	$(".captchaContent").empty();
+	var capContent = $(frontinfo.captchaCodeHtml);
+	var imgSrc = "/hxet/servlet/GenImage";
+	capContent.find("#captchaImg").attr("src",imgSrc+"?type=1&_="+new Date().getTime());
+	$(".captchaContent").html("<tr>"+(capContent.html()==null?"":capContent.html())+"</tr>");
+	$(".captchaContent #captchaCode").val("");
+
+};
+function captcha_content_clear(){
+	$(".captchaContent").empty();
+	
+};
+function captcha_refresh(){
+	//如果没有验证码区域，跳过刷新
+	if($(".captchaContent #captchaCode").length==0)
+		return ;
+	var imgSrc = $("#captchaImg").attr("src");
+	$("#captchaImg").attr("src",imgSrc.substring(0,imgSrc.indexOf("?")==-1?imgSrc.length-1:imgSrc.indexOf("?"))+"?type=1&_="+new Date().getTime());
+	$(".captchaContent #captchaCode").val("");
+};
+function captcha_check_doAjax(obj){
+	
+	//如果没有验证码区域，跳过校验
+	if($(".captchaContent #captchaCode").length==0)
+		return true;
+	
+	var checkResult = false;
+	var captchaCode = $(".captchaContent #captchaCode").val();
+	$("input[name=captchaCode]").val(captchaCode);
+	
+	if(!captchaCode ){
+		errmsg.getErrMsg(errorinfo.captchaEmpty);
+		return false;
+	}
+	if(captchaCode.length!=4){
+		errmsg.getErrMsg(errorinfo.captchaError);
+		return false;
+	}
+	var captchaError;
+	$.ajax({
+		url:"reservation/CaptchaCheck.do",
+		data:{"captchaCode":captchaCode,"type":"1"},
+		type:"post",
+		dataType:"json",
+		async:false,
+		cache: false,
+		"error":function(){
+			errmsg.getErrMsg(errorinfo.captchaError);
+		},
+		success:function(json){
+				if(json && json.result==1){
+					checkResult = true;
+				}else{
+					captchaError = json.result;
+				}
+		}});
+	if(!checkResult){
+		if(captchaError==-1){
+			errmsg.getErrMsg(errorinfo.catpchaTimeOut);
+		}else{
+			errmsg.getErrMsg(errorinfo.captchaError);
+		}
+		captcha_refresh();
+		
+	}
+	return checkResult;
+};
+
+function getStringLength(s) {
+	var totalLength = 0; 
+	var i; 
+	var charCode; 
+	for(i = 0; i < s.length; i++) {
+		charCode = s.charCodeAt(i);
+		if(charCode < 0x007f) {
+			totalLength = totalLength + 1;
+		}else if((0x0080 <= charCode) && (charCode <= 0x07ff)) {
+			totalLength += 2;
+		}else if ((0x0800 <= charCode) && (charCode <= 0xffff)) {
+			totalLength += 3;
+		}
+	}
+	return totalLength; 
+}

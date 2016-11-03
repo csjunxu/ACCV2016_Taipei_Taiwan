@@ -1,0 +1,37 @@
+var languange_Param = {
+	type:'CN'
+};
+
+var setLanguage = function(obj){
+	if('' != obj.languange_type){
+		languange_Param.type = obj.languange_type;
+	}
+};
+
+$.extend({
+	languange: setLanguage
+});
+
+
+var errmsg_obj = function(){
+	this.getErrMsg = function(info){
+		tb_show_4_errorinfo(info);
+	};
+
+	this.getErrMsgInfo = function(info,arr){
+		for(var i=0;i<arr.length;i++){
+			info = info.replace("{"+i+"}",arr[i]);
+		}
+		
+		tb_show_4_errorinfo(info);
+	};
+};
+
+var info_obj = function(){
+	this.getInfo = function(info){
+		return info;
+	};
+};
+
+var errmsg = new errmsg_obj();
+var infomsg = new info_obj();
