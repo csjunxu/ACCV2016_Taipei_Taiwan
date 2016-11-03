@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/W32TeX)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: W10-02.aux
+The style file: splncs.bst
+Database file #1: egbib.bib
+Warning--empty journal in prml
+Warning--there's no year in neatimage
+You can't pop an empty literal stack for entry neatimage
+while executing---line 2139 of file splncs.bst
+Warning--there's no year in ncwebsite
+You can't pop an empty literal stack for entry ncwebsite
+while executing---line 2139 of file splncs.bst
+You've used 36 entries,
+            2043 wiz_defined-function locations,
+            686 strings with 8998 characters,
+and the built_in function-call counts, 12687 in all, are:
+= -- 1357
+> -- 395
+< -- 32
++ -- 146
+- -- 110
+* -- 845
+:= -- 1618
+add.period$ -- 39
+call.type$ -- 36
+change.case$ -- 35
+chr.to.int$ -- 0
+cite$ -- 39
+duplicate$ -- 685
+empty$ -- 1067
+format.name$ -- 110
+if$ -- 3066
+int.to.chr$ -- 0
+int.to.str$ -- 36
+missing$ -- 35
+newline$ -- 183
+num.names$ -- 36
+pop$ -- 87
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 551
+stack$ -- 0
+substring$ -- 1144
+swap$ -- 414
+text.length$ -- 32
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 130
+width$ -- 38
+write$ -- 417
+(There were 2 error messages)

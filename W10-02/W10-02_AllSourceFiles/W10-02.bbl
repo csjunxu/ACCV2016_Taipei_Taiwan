@@ -1,0 +1,204 @@
+\begin{thebibliography}{10}
+
+\bibitem{rudin1992nonlinear}
+Rudin, L.I., Osher, S., Fatemi, E.:
+\newblock Nonlinear total variation based noise removal algorithms.
+\newblock Physica D: Nonlinear Phenomena \textbf{60} (1992)  259--268
+
+\bibitem{nlm}
+Buades, A., Coll, B., Morel, J.M.:
+\newblock A non-local algorithm for image denoising.
+\newblock CVPR (2005)  60--65
+
+\bibitem{foe}
+Roth, S., Black, M.J.:
+\newblock Fields of {Experts}.
+\newblock International Journal of Computer Vision \textbf{82} (2009)  205--229
+
+\bibitem{ksvd}
+Elad, M., Aharon, M.:
+\newblock Image denoising via sparse and redundant representations over learned
+  dictionaries.
+\newblock Image Processing, IEEE Transactions on \textbf{15} (2006)  3736--3745
+
+\bibitem{bm3d}
+Dabov, K., Foi, A., Katkovnik, V., Egiazarian, K.:
+\newblock Image denoising by sparse 3-{D} transform-domain collaborative
+  filtering.
+\newblock Image Processing, IEEE Transactions on \textbf{16} (2007)  2080--2095
+
+\bibitem{lssc}
+Mairal, J., Bach, F., Ponce, J., Sapiro, G., Zisserman, A.:
+\newblock Non-local sparse models for image restoration.
+\newblock ICCV (2009)  2272--2279
+
+\bibitem{epll}
+Zoran, D., Weiss, Y.:
+\newblock From learning models of natural image patches to whole image
+  restoration.
+\newblock ICCV (2011)  479--486
+
+\bibitem{mlp}
+Burger, H.C., Schuler, C.J., Harmeling, S.:
+\newblock Image denoising: Can plain neural networks compete with bm3d?
+\newblock In: Computer Vision and Pattern Recognition (CVPR), 2012 IEEE
+  Conference on, IEEE (2012)  2392--2399
+
+\bibitem{cai2010fast}
+Cai, J.F., Chan, R.H., Nikolova, M.:
+\newblock Fast two-phase image deblurring under impulse noise.
+\newblock Journal of Mathematical Imaging and Vision \textbf{36} (2010)  46--53
+
+\bibitem{l1l0}
+Xiao, Y., Zeng, T., Yu, J., Ng, M.K.:
+\newblock Restoration of images corrupted by mixed gaussian-impulse noise via
+  l1–l0 minimization.
+\newblock Pattern Recognition \textbf{44} (2011)  1708 -- 1720
+
+\bibitem{wesnr}
+Jiang, J., Zhang, L., Yang, J.:
+\newblock Mixed noise removal by weighted encoding with sparse nonlocal
+  regularization.
+\newblock Image Processing, IEEE Transactions on \textbf{23} (2014)  2651--2662
+
+\bibitem{blsgsm}
+Portilla, J., Strela, V., Wainwright, M., Simoncelli, E.:
+\newblock Image denoising using scale mixtures of {Gaussians} in the wavelet
+  domain.
+\newblock Image Processing, IEEE Transactions on \textbf{12} (2003)  1338--1351
+
+\bibitem{fullyblind}
+Portilla, J.:
+\newblock Full blind denoising through noise covariance estimation using
+  gaussian scale mixtures in the wavelet domain.
+\newblock Image Processing, 2004. ICIP '04. 2004 International Conference on
+  \textbf{2} (2004)  1217--1220
+
+\bibitem{huber2011robust}
+Huber, P.J.:
+\newblock Robust statistics.
+\newblock Springer (2011)
+
+\bibitem{rabie2005robust}
+Rabie, T.:
+\newblock Robust estimation approach for blind denoising.
+\newblock Image Processing, IEEE Transactions on \textbf{14} (2005)  1755--1765
+
+\bibitem{Liu2008}
+Liu, C., Szeliski, R., Kang, S.B., Zitnick, C.L., Freeman, W.T.:
+\newblock Automatic estimation and removal of noise from a single image.
+\newblock IEEE Transactions on Pattern Analysis and Machine Intelligence
+  \textbf{30} (2008)  299--314
+
+\bibitem{almapg}
+Gong, Z., Shen, Z., Toh, K.C.:
+\newblock Image restoration with mixed or unknown noises.
+\newblock Multiscale Modeling \& Simulation \textbf{12} (2014)  458--487
+
+\bibitem{noiseclinic}
+Lebrun, M., Colom, M., Morel, J.M.:
+\newblock Multiscale image blind denoising.
+\newblock Image Processing, IEEE Transactions on \textbf{24} (2015)  3149--3161
+
+\bibitem{nlbayes}
+Lebrun, M., Buades, A., Morel, J.M.:
+\newblock A nonlocal bayesian image denoising algorithm.
+\newblock SIAM Journal on Imaging Sciences \textbf{6} (2013)  1665--1688
+
+\bibitem{hjort1990}
+Hjort, N.L.:
+\newblock Nonparametric bayes estimators based on beta processes in models for
+  life history data.
+\newblock The Annals of Statistics (1990)  1259--1294
+
+\bibitem{thibaux2007}
+Thibaux, R., Jordan, M.I.:
+\newblock Hierarchical beta processes and the indian buffet process.
+\newblock In: International conference on artificial intelligence and
+  statistics. (2007)  564--571
+
+\bibitem{paisley2009}
+Paisley, J., Carin, L.:
+\newblock Nonparametric factor analysis with beta process priors.
+\newblock In: Proceedings of the 26th Annual International Conference on
+  Machine Learning, ACM (2009)  777--784
+
+\bibitem{ple}
+Yu, G., Sapiro, G., Mallat, S.:
+\newblock Solving inverse problems with piecewise linear estimators: {From}
+  {Gaussian} mixture models to structured sparsity.
+\newblock Image Processing, IEEE Transactions on \textbf{21} (2012)  2481--2499
+
+\bibitem{prml}
+Bishop, C.M.:
+\newblock Pattern recognition and machine learning.
+\newblock (2006)
+
+\bibitem{ncsr}
+Dong, W., Zhang, L., Shi, G., Li, X.:
+\newblock Nonlocally centralized sparse representation for image restoration.
+\newblock Image Processing, IEEE Transactions on \textbf{22} (2013)  1620--1630
+
+\bibitem{pgpd}
+Xu, J., Zhang, L., Zuo, W., Zhang, D., Feng, X.:
+\newblock Patch group based nonlocal self-similarity prior learning for image
+  denoising.
+\newblock The IEEE International Conference on Computer Vision (ICCV) (2015)
+  244--252
+
+\bibitem{bpfa}
+Zhou, M., Chen, H., Ren, L., Sapiro, G., Carin, L., Paisley, J.W.:
+\newblock Non-parametric bayesian dictionary learning for sparse image
+  representations.
+\newblock In: NIPS. (2009)  2295--2303
+
+\bibitem{ferguson1973bayesian}
+Ferguson, T.S.:
+\newblock A bayesian analysis of some nonparametric problems.
+\newblock The annals of statistics (1973)  209--230
+
+\bibitem{ren2011logistic}
+Ren, L., Du, L., Carin, L., Dunson, D.:
+\newblock Logistic stick-breaking process.
+\newblock The Journal of Machine Learning Research \textbf{12} (2011)  203--239
+
+\bibitem{wnnm}
+Gu, S., Zhang, L., Zuo, W., Feng, X.:
+\newblock Weighted nuclear norm minimization with application to image
+  denoising.
+\newblock CVPR (2014)  2862--2869
+
+\bibitem{bpfa2012}
+Zhou, M., Chen, H., Paisley, J., Ren, L., Li, L., Xing, Z., Dunson, D., Sapiro,
+  G., Carin, L.:
+\newblock Nonparametric bayesian dictionary learning for analysis of noisy and
+  incomplete images.
+\newblock Image Processing, IEEE Transactions on \textbf{21} (2012)  130--144
+
+\bibitem{ssim}
+Wang, Z., Bovik, A.C., Sheikh, H.R., Simoncelli, E.P.:
+\newblock Image quality assessment: from error visibility to structural
+  similarity.
+\newblock Image Processing, IEEE Transactions on \textbf{13} (2004)  600--612
+
+\bibitem{neatimage}
+ABSoft, N.:
+\newblock Neat image.
+\newblock (\url{https://ni.neatvideo.com/home})
+
+\bibitem{liu2013single}
+Liu, X., Tanaka, M., Okutomi, M.:
+\newblock Single-image noise level estimation for blind denoising.
+\newblock Image Processing, IEEE Transactions on \textbf{22} (2013)  5226--5237
+
+\bibitem{amf}
+Hwang, H., Haddad, R.:
+\newblock Adaptive median filters: new algorithms and results.
+\newblock Image Processing, IEEE Transactions on \textbf{4} (1995)  499--502
+
+\bibitem{ncwebsite}
+Lebrun, M., Colom, M., Morel, J.M.:
+\newblock The noise clinic: a blind image denoising algorithm.
+\newblock (\url{http://www.ipol.im/pub/art/2015/125/}) Accessed 01 28, 2015.
+
+\end{thebibliography}

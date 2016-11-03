@@ -1,0 +1,1642 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.9.12)  3 NOV 2016 09:43
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./W10-02.tex
+(./W10-02.tex
+LaTeX2e <2015/01/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 79 languages loaded.
+(./llncs.cls
+Document Class: llncs 2002/01/28 v2.13 
+ LaTeX document class for Lecture Notes in Computer Science
+(c:/Software/texlive/2015/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(c:/Software/texlive/2015/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
+\c@tracingmulticols=\count87
+\mult@box=\box26
+\multicol@leftmargin=\dimen103
+\c@unbalance=\count88
+\c@collectmore=\count89
+\doublecol@number=\count90
+\multicoltolerance=\count91
+\multicolpretolerance=\count92
+\full@width=\dimen104
+\page@free=\dimen105
+\premulticols=\dimen106
+\postmulticols=\dimen107
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\maxbalancingoverflow=\dimen108
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count93
+\c@finalcolumnbadness=\count94
+\last@try=\dimen109
+\multicolovershoot=\dimen110
+\multicolundershoot=\dimen111
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+\mc@col@check@num=\count95
+)
+\c@chapter=\count96
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 360.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 361.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 362.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 363.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 364.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 365.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 366.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 367.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 368.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 369.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 370.
+\tocchpnum=\dimen112
+\tocsecnum=\dimen113
+\tocsectotal=\dimen114
+\tocsubsecnum=\dimen115
+\tocsubsectotal=\dimen116
+\tocsubsubsecnum=\dimen117
+\tocsubsubsectotal=\dimen118
+\tocparanum=\dimen119
+\tocparatotal=\dimen120
+\tocsubparanum=\dimen121
+\@tempcntc=\count97
+\fnindent=\dimen122
+\c@@inst=\count98
+\c@@auth=\count99
+\c@auco=\count100
+\instindent=\dimen123
+\authrun=\box52
+\authorrunning=\toks14
+\tocauthor=\toks15
+\titrun=\box53
+\titlerunning=\toks16
+\toctitle=\toks17
+\c@theorem=\count101
+\c@case=\count102
+\c@conjecture=\count103
+\c@corollary=\count104
+\c@definition=\count105
+\c@example=\count106
+\c@exercise=\count107
+\c@lemma=\count108
+\c@note=\count109
+\c@problem=\count110
+\c@property=\count111
+\c@proposition=\count112
+\c@question=\count113
+\c@solution=\count114
+\c@remark=\count115
+\headlineindent=\dimen124
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/Software/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/Software/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(c:/Software/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(c:/Software/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(c:/Software/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count116
+))
+\Gin@req@height=\dimen125
+\Gin@req@width=\dimen126
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(c:/Software/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(c:/Software/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks19
+\ex@=\dimen127
+))
+(c:/Software/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen128
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count117
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count118
+\leftroot@=\count119
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count120
+\DOTSCASE@=\count121
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+\big@size=\dimen129
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+
+
+Package amsmath Warning: Unable to redefine math accent \vec.
+
+\macc@depth=\count122
+\c@MaxMatrixCols=\count123
+\dotsspace@=\muskip10
+\c@parentequation=\count124
+\dspbrk@lvl=\count125
+\tag@help=\toks20
+\row@=\count126
+\column@=\count127
+\maxfields@=\count128
+\andhelp@=\toks21
+\eqnshift@=\dimen130
+\alignsep@=\dimen131
+\tagshift@=\dimen132
+\tagwidth@=\dimen133
+\totwidth@=\dimen134
+\lineht@=\dimen135
+\@envbody=\toks22
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+) (c:/Software/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/Software/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/Software/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+(c:/Software/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 142.
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen136
+\epsfysize=\dimen137
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip48
+\subfigcapskip=\skip49
+\subfigcaptopadj=\dimen138
+\subfigbottomskip=\skip50
+\subfigcapmargin=\dimen139
+\subfiglabelskip=\skip51
+\c@subfigure=\count129
+\c@lofdepth=\count130
+\c@subtable=\count131
+\c@lotdepth=\count132
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(c:/Software/texlive/2015/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip52
+\subfig@bottom=\skip53
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count133
+\output=\toks24
+\linenoprevgraf=\count134
+\linenumbersep=\dimen140
+\linenumberwidth=\dimen141
+\c@linenumber=\count135
+\c@pagewiselinenumber=\count136
+\c@LN@truepage=\count137
+\c@internallinenumber=\count138
+\c@internallinenumbers=\count139
+\quotelinenumbersep=\dimen142
+\bframerule=\dimen143
+\bframesep=\dimen144
+\bframebox=\box56
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/was/upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/preprint/authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip54
+\@affilsep=\skip55
+\c@Maxaffil=\count140
+\c@authors=\count141
+\c@affil=\count142
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/xpatch/xpatch.sty
+(c:/Software/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2015/09/06 v5925 L3 programming layer (loader) 
+
+(c:/Software/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2015/09/06 v5925 L3 programming layer (code) 
+L3 Module: l3bootstrap 2015/07/31 v5729 L3 Bootstrap code
+L3 Module: l3names 2015/08/17 v5848 L3 Namespace for primitives
+L3 Module: l3basics 2015/08/28 v5897 L3 Basic definitions
+L3 Module: l3expan 2015/08/28 v5897 L3 Argument expansion
+L3 Module: l3tl 2015/09/02 v5908 L3 Token lists
+L3 Module: l3str 2015/09/05 v5920 L3 Strings
+L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
+L3 Module: l3int 2015/08/24 v5885 L3 Integers
+\c_max_int=\count143
+\l_tmpa_int=\count144
+\l_tmpb_int=\count145
+\g_tmpa_int=\count146
+\g_tmpb_int=\count147
+L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
+L3 Module: l3prg 2015/08/25 v5891 L3 Control structures
+\g__prg_map_int=\count148
+L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
+L3 Module: l3token 2015/08/26 v5893 L3 Experimental token manipulation
+L3 Module: l3prop 2015/08/05 v5777 L3 Property lists
+L3 Module: l3msg 2015/08/25 v5891 L3 Messages
+L3 Module: l3file 2015/08/05 v5786 L3 File and I/O operations
+\l_iow_line_count_int=\count149
+\l__iow_target_count_int=\count150
+\l__iow_current_line_int=\count151
+\l__iow_current_word_int=\count152
+\l__iow_current_indentation_int=\count153
+L3 Module: l3skip 2015/08/26 v5893 L3 Dimensions and skips
+\c_zero_dim=\dimen145
+\c_max_dim=\dimen146
+\l_tmpa_dim=\dimen147
+\l_tmpb_dim=\dimen148
+\g_tmpa_dim=\dimen149
+\g_tmpb_dim=\dimen150
+\c_zero_skip=\skip56
+\c_max_skip=\skip57
+\l_tmpa_skip=\skip58
+\l_tmpb_skip=\skip59
+\g_tmpa_skip=\skip60
+\g_tmpb_skip=\skip61
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+L3 Module: l3keys 2015/08/20 v5869 L3 Key-value interfaces
+\g__keyval_level_int=\count154
+\l_keys_choice_int=\count155
+L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
+\c__fp_leading_shift_int=\count156
+\c__fp_middle_shift_int=\count157
+\c__fp_trailing_shift_int=\count158
+\c__fp_big_leading_shift_int=\count159
+\c__fp_big_middle_shift_int=\count160
+\c__fp_big_trailing_shift_int=\count161
+\c__fp_Bigg_leading_shift_int=\count162
+\c__fp_Bigg_middle_shift_int=\count163
+\c__fp_Bigg_trailing_shift_int=\count164
+L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
+\c_empty_box=\box57
+\l_tmpa_box=\box58
+\l_tmpb_box=\box59
+\g_tmpa_box=\box60
+\g_tmpb_box=\box61
+L3 Module: l3coffins 2015/08/06 v5789 L3 Coffin code layer
+\l__coffin_internal_box=\box62
+\l__coffin_internal_dim=\dimen151
+\l__coffin_offset_x_dim=\dimen152
+\l__coffin_offset_y_dim=\dimen153
+\l__coffin_x_dim=\dimen154
+\l__coffin_y_dim=\dimen155
+\l__coffin_x_prime_dim=\dimen156
+\l__coffin_y_prime_dim=\dimen157
+\c_empty_coffin=\box63
+\l__coffin_aligned_coffin=\box64
+\l__coffin_aligned_internal_coffin=\box65
+\l_tmpa_coffin=\box66
+\l_tmpb_coffin=\box67
+\l__coffin_display_coffin=\box68
+\l__coffin_display_coord_coffin=\box69
+\l__coffin_display_pole_coffin=\box70
+\l__coffin_display_offset_dim=\dimen158
+\l__coffin_display_x_dim=\dimen159
+\l__coffin_display_y_dim=\dimen160
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3candidates 2015/09/03 v5911 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen161
+\l__box_bottom_dim=\dimen162
+\l__box_left_dim=\dimen163
+\l__box_right_dim=\dimen164
+\l__box_top_new_dim=\dimen165
+\l__box_bottom_new_dim=\dimen166
+\l__box_left_new_dim=\dimen167
+\l__box_right_new_dim=\dimen168
+\l__box_internal_box=\box71
+\l__coffin_bounding_shift_dim=\dimen169
+\l__coffin_left_corner_dim=\dimen170
+\l__coffin_right_corner_dim=\dimen171
+\l__coffin_bottom_corner_dim=\dimen172
+\l__coffin_top_corner_dim=\dimen173
+\l__coffin_scaled_total_height_dim=\dimen174
+\l__coffin_scaled_width_dim=\dimen175
+L3 Module: l3luatex 2015/06/30 v5646 L3 Experimental LuaTeX-specific functions
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
+File: l3unicode-data.def 2015/07/20 v5676 L3 Unicode data
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2015/06/30 v5646 L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count165
+))
+Package: xpatch 2012/10/02 v0.3 Extending etoolbox patching commands
+
+(c:/Software/texlive/2015/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2015/09/06 v5925 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count166
+\l__xparse_m_args_int=\count167
+\l__xparse_mandatory_args_int=\count168
+\l__xparse_processor_int=\count169
+\l__xparse_v_nesting_int=\count170
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count171
+)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchcmd with sig. '' on line 125.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretocmd with sig. '' on line 126.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xapptocmd with sig. '' on line 127.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshowcmd with sig. '' on line 128.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchbibmacro with sig. 'm' on line 131.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretobibmacro with sig. 'm' on line 133.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xapptobibmacro with sig. 'm' on line 135.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshowbibmacro with sig. 'm' on line 137.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchfieldformat with sig. 'O{*}m' on line 139.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretofieldformat with sig. 'O{*}m' on line 141.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xapptofieldformat with sig. 'O{*}m' on line 143.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshowfieldformat with sig. 'O{*}m' on line 145.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchnameformat with sig. 'O{*}m' on line 147.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretonameformat with sig. 'O{*}m' on line 149.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xapptonameformat with sig. 'O{*}m' on line 151.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshownameformat with sig. 'O{*}m' on line 153.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchlistformat with sig. 'O{*}m' on line 155.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretolistformat with sig. 'O{*}m' on line 157.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xapptolistformat with sig. 'O{*}m' on line 159.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshowlistformat with sig. 'O{*}m' on line 161.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchindexfieldformat with sig. 'O{*}m' on line 163.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretoindexfieldformat with sig. 'O{*}m' on line 165.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xapptoindexfieldformat with sig. 'O{*}m' on line 167.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshowindexfieldformat with sig. 'O{*}m' on line 169.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchindexnameformat with sig. 'O{*}m' on line 171.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretoindexnameformat with sig. 'O{*}m' on line 173.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xapptoindexnameformat with sig. 'O{*}m' on line 175.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshowindexnameformat with sig. 'O{*}m' on line 177.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchindexlistformat with sig. 'O{*}m' on line 179.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretoindexlistformat with sig. 'O{*}m' on line 181.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xappindextolistformat with sig. 'O{*}m' on line 183.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshowindexlistformat with sig. 'O{*}m' on line 185.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpatchbibdriver with sig. 'm' on line 187.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xpretobibdriver with sig. 'm' on line 189.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xapptobibdriver with sig. 'm' on line 191.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xshowbibdriver with sig. 'm' on line 193.
+.................................................
+)
+(./W10-02.aux)
+\openout1 = `W10-02.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 24.
+ (c:/Software/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+) (c:/Software/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count172
+\scratchdimen=\dimen176
+\scratchbox=\box72
+\nofMPsegments=\count173
+\nofMParguments=\count174
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count175
+\MPscratchDim=\dimen177
+\MPnumerator=\count176
+\makeMPintoPDFobject=\count177
+\everyMPtoPDFconversion=\toks26
+) (c:/Software/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/Software/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(c:/Software/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(c:/Software/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(c:/Software/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(c:/Software/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(c:/Software/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(c:/Software/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(c:/Software/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(c:/Software/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Try loading font information for U+msa on input line 47.
+
+(c:/Software/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 47.
+
+(c:/Software/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
+ [1
+
+
+{c:/Software/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
+ [2]
+<PGResiduals2.png, id=16, 1673.50218pt x 182.93344pt>
+File: PGResiduals2.png Graphic file (type png)
+ <use PGResiduals2.png>
+Package pdftex.def Info: PGResiduals2.png used on input line 87.
+(pdftex.def)             Requested size: 347.12354pt x 37.94263pt.
+
+<br_Original_barbara.png, id=17, 513.92pt x 513.92pt>
+File: br_Original_barbara.png Graphic file (type png)
+
+<use br_Original_barbara.png>
+Package pdftex.def Info: br_Original_barbara.png used on input line 121.
+(pdftex.def)             Requested size: 65.95432pt x 65.94934pt.
+
+<br_barbara_BPFA_40.png, id=18, 513.92pt x 513.92pt>
+File: br_barbara_BPFA_40.png Graphic file (type png)
+
+<use br_barbara_BPFA_40.png>
+Package pdftex.def Info: br_barbara_BPFA_40.png used on input line 121.
+(pdftex.def)             Requested size: 65.95432pt x 65.94934pt.
+
+<br_barbara_BPFA_Clu_40.png, id=19, 513.92pt x 513.92pt>
+File: br_barbara_BPFA_Clu_40.png Graphic file (type png)
+
+<use br_barbara_BPFA_Clu_40.png>
+Package pdftex.def Info: br_barbara_BPFA_Clu_40.png used on input line 121.
+(pdftex.def)             Requested size: 65.95432pt x 65.94934pt.
+
+<br_barbara_BPFA_NSSDC_40.png, id=20, 513.92pt x 513.92pt>
+File: br_barbara_BPFA_NSSDC_40.png Graphic file (type png)
+
+<use br_barbara_BPFA_NSSDC_40.png>
+Package pdftex.def Info: br_barbara_BPFA_NSSDC_40.png used on input line 121.
+(pdftex.def)             Requested size: 65.95432pt x 65.94934pt.
+
+<br_barbara_BPFA_CluNSSDC_40.png, id=21, 513.92pt x 513.92pt>
+File: br_barbara_BPFA_CluNSSDC_40.png Graphic file (type png)
+
+<use br_barbara_BPFA_CluNSSDC_40.png>
+Package pdftex.def Info: br_barbara_BPFA_CluNSSDC_40.png used on input line 121
+.
+(pdftex.def)             Requested size: 65.95432pt x 65.94934pt.
+ [3]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 160.
+
+
+(c:/Software/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [4 <./PGResiduals2.png> <./br_Original_barbara.png (PNG copy)> <./br_barbara_
+BPFA_40.png (PNG copy)> <./br_barbara_BPFA_Clu_40.png (PNG copy)> <./br_barbara
+_BPFA_NSSDC_40.png (PNG copy)> <./br_barbara_BPFA_CluNSSDC_40.png (PNG copy)>] 
+[5]
+<BPFA_barbara_40_dict.png, id=43, 217.81375pt x 199.74625pt>
+File: BPFA_barbara_40_dict.png Graphic file (type png)
+
+<use BPFA_barbara_40_dict.png>
+Package pdftex.def Info: BPFA_barbara_40_dict.png used on input line 228.
+(pdftex.def)             Requested size: 83.31155pt x 76.40115pt.
+
+<barbara_Iteration8_dict2.png, id=44, 172.645pt x 154.5775pt>
+File: barbara_Iteration8_dict2.png Graphic file (type png)
+
+<use barbara_Iteration8_dict2.png>
+Package pdftex.def Info: barbara_Iteration8_dict2.png used on input line 228.
+(pdftex.def)             Requested size: 83.31155pt x 74.59259pt.
+
+<barbara_Iteration8_dict3.png, id=45, 190.7125pt x 181.67876pt>
+File: barbara_Iteration8_dict3.png Graphic file (type png)
+
+<use barbara_Iteration8_dict3.png>
+Package pdftex.def Info: barbara_Iteration8_dict3.png used on input line 228.
+(pdftex.def)             Requested size: 83.31155pt x 79.36505pt.
+
+<barbara_Iteration8_dict4.png, id=46, 190.7125pt x 181.67876pt>
+File: barbara_Iteration8_dict4.png Graphic file (type png)
+
+<use barbara_Iteration8_dict4.png>
+Package pdftex.def Info: barbara_Iteration8_dict4.png used on input line 228.
+(pdftex.def)             Requested size: 83.31155pt x 79.36505pt.
+ [6 <./BPFA_barbara_40_dict.png (PNG copy)> <./barbara_Iteration8_dict2.png (PN
+G copy)> <./barbara_Iteration8_dict3.png (PNG copy)> <./barbara_Iteration8_dict
+4.png (PNG copy)>]
+<airfield.png, id=51, 256.96pt x 256.96pt>
+File: airfield.png Graphic file (type png)
+ <use airfield.png>
+Package pdftex.def Info: airfield.png used on input line 316.
+(pdftex.def)             Requested size: 33.11415pt x 33.1119pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 316--316
+[][] 
+ []
+
+<airplane.png, id=52, 256.96pt x 256.96pt>
+File: airplane.png Graphic file (type png)
+ <use airplane.png>
+Package pdftex.def Info: airplane.png used on input line 316.
+(pdftex.def)             Requested size: 33.11415pt x 33.1119pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 316--316
+[][] 
+ []
+
+<baboon.png, id=53, 256.96pt x 256.96pt>
+File: baboon.png Graphic file (type png)
+ <use baboon.png>
+Package pdftex.def Info: baboon.png used on input line 316.
+(pdftex.def)             Requested size: 33.11415pt x 33.1119pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 316--316
+[][] 
+ []
+
+<barbara.png, id=54, 256.96pt x 256.96pt>
+File: barbara.png Graphic file (type png)
+ <use barbara.png>
+Package pdftex.def Info: barbara.png used on input line 316.
+(pdftex.def)             Requested size: 33.11415pt x 33.1119pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 316--316
+[][] 
+ []
+
+<boat.png, id=55, 256.96pt x 256.96pt>
+File: boat.png Graphic file (type png)
+ <use boat.png>
+Package pdftex.def Info: boat.png used on input line 316.
+(pdftex.def)             Requested size: 33.11415pt x 33.1119pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 316--316
+[][] 
+ []
+
+<cameraman.png, id=56, 128.48pt x 128.48pt>
+File: cameraman.png Graphic file (type png)
+ <use cameraman.png>
+Package pdftex.def Info: cameraman.png used on input line 316.
+(pdftex.def)             Requested size: 33.11415pt x 33.11386pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 316--316
+[][] 
+ []
+
+<carhouse.png, id=57, 256.96pt x 256.96pt>
+File: carhouse.png Graphic file (type png)
+ <use carhouse.png>
+Package pdftex.def Info: carhouse.png used on input line 316.
+(pdftex.def)             Requested size: 33.11415pt x 33.1119pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 316--316
+[][] 
+ []
+
+<couple.png, id=58, 256.96pt x 256.96pt>
+File: couple.png Graphic file (type png)
+ <use couple.png>
+Package pdftex.def Info: couple.png used on input line 316.
+(pdftex.def)             Requested size: 33.11415pt x 33.1119pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 316--316
+[][] 
+ []
+
+<elaine.png, id=59, 256.96pt x 256.96pt>
+File: elaine.png Graphic file (type png)
+ <use elaine.png>
+Package pdftex.def Info: elaine.png used on input line 316.
+(pdftex.def)             Requested size: 33.11415pt x 33.1119pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 316--316
+[][] 
+ []
+
+<hat.png, id=60, 128.48pt x 128.48pt>
+File: hat.png Graphic file (type png)
+ <use hat.png>
+Package pdftex.def Info: hat.png used on input line 316.
+(pdftex.def)             Requested size: 33.11415pt x 33.11386pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 316--316
+[][] 
+ []
+
+<hill.png, id=61, 256.96pt x 256.96pt>
+File: hill.png Graphic file (type png)
+ <use hill.png>
+Package pdftex.def Info: hill.png used on input line 349.
+(pdftex.def)             Requested size: 33.11415pt x 33.1119pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 349--349
+[][] 
+ []
+
+<house.png, id=62, 128.48pt x 128.48pt>
+File: house.png Graphic file (type png)
+ <use house.png>
+Package pdftex.def Info: house.png used on input line 349.
+(pdftex.def)             Requested size: 33.11415pt x 33.11386pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 349--349
+[][] 
+ []
+
+<lake.png, id=63, 256.96pt x 256.96pt>
+File: lake.png Graphic file (type png)
+ <use lake.png>
+Package pdftex.def Info: lake.png used on input line 349.
+(pdftex.def)             Requested size: 33.11415pt x 33.1119pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 349--349
+[][] 
+ []
+
+<leaves.png, id=64, 128.48pt x 128.48pt>
+File: leaves.png Graphic file (type png)
+ <use leaves.png>
+Package pdftex.def Info: leaves.png used on input line 349.
+(pdftex.def)             Requested size: 33.11415pt x 33.11386pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 349--349
+[][] 
+ []
+
+<lena.png, id=65, 256.96pt x 256.96pt>
+File: lena.png Graphic file (type png)
+ <use lena.png>
+Package pdftex.def Info: lena.png used on input line 349.
+(pdftex.def)             Requested size: 33.11415pt x 33.1119pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 349--349
+[][] 
+ []
+
+<man.png, id=66, 256.96pt x 256.96pt>
+File: man.png Graphic file (type png)
+ <use man.png>
+Package pdftex.def Info: man.png used on input line 349.
+(pdftex.def)             Requested size: 33.11415pt x 33.1119pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 349--349
+[][] 
+ []
+
+<monarch.png, id=67, 128.48pt x 128.48pt>
+File: monarch.png Graphic file (type png)
+ <use monarch.png>
+Package pdftex.def Info: monarch.png used on input line 349.
+(pdftex.def)             Requested size: 33.11415pt x 33.11386pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 349--349
+[][] 
+ []
+
+<paint.png, id=68, 128.48pt x 128.48pt>
+File: paint.png Graphic file (type png)
+ <use paint.png>
+Package pdftex.def Info: paint.png used on input line 349.
+(pdftex.def)             Requested size: 33.11415pt x 33.11386pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 349--349
+[][] 
+ []
+
+<peppers.png, id=69, 256.96pt x 256.96pt>
+File: peppers.png Graphic file (type png)
+ <use peppers.png>
+Package pdftex.def Info: peppers.png used on input line 349.
+(pdftex.def)             Requested size: 33.11415pt x 33.1119pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 349--349
+[][] 
+ []
+
+<zelda.png, id=70, 128.48pt x 128.48pt>
+File: zelda.png Graphic file (type png)
+ <use zelda.png>
+Package pdftex.def Info: zelda.png used on input line 349.
+(pdftex.def)             Requested size: 33.11415pt x 33.11386pt.
+
+Overfull \hbox (1.87431pt too wide) in paragraph at lines 349--349
+[][] 
+ []
+
+[7] [8 <./airfield.png (PNG copy)> <./airplane.png (PNG copy)> <./baboon.png (P
+NG copy)> <./barbara.png (PNG copy)> <./boat.png (PNG copy)> <./cameraman.png (
+PNG copy)> <./carhouse.png (PNG copy)> <./couple.png (PNG copy)> <./elaine.png 
+(PNG copy)> <./hat.png (PNG copy)> <./hill.png (PNG copy)> <./house.png (PNG co
+py)> <./lake.png (PNG copy)> <./leaves.png (PNG copy)> <./lena.png (PNG copy)> 
+<./man.png (PNG copy)> <./monarch.png (PNG copy)> <./paint.png (PNG copy)> <./p
+eppers.png (PNG copy)> <./zelda.png (PNG copy)>]
+<br_Original_house.png, id=78, 128.48pt x 128.48pt>
+File: br_Original_house.png Graphic file (type png)
+
+<use br_Original_house.png>
+Package pdftex.def Info: br_Original_house.png used on input line 455.
+(pdftex.def)             Requested size: 69.42365pt x 69.4252pt.
+
+<br_Noisy_Gau_40_house.png, id=79, 128.48pt x 128.48pt>
+File: br_Noisy_Gau_40_house.png Graphic file (type png)
+
+<use br_Noisy_Gau_40_house.png>
+Package pdftex.def Info: br_Noisy_Gau_40_house.png used on input line 455.
+(pdftex.def)             Requested size: 69.42365pt x 69.4252pt.
+
+<br_BPFA_Gau_house_40.png, id=80, 128.48pt x 128.48pt>
+File: br_BPFA_Gau_house_40.png Graphic file (type png)
+
+<use br_BPFA_Gau_house_40.png>
+Package pdftex.def Info: br_BPFA_Gau_house_40.png used on input line 455.
+(pdftex.def)             Requested size: 69.42365pt x 69.4252pt.
+
+<br_BM3D_Gau_40_house.png, id=81, 128.48pt x 128.48pt>
+File: br_BM3D_Gau_40_house.png Graphic file (type png)
+
+<use br_BM3D_Gau_40_house.png>
+Package pdftex.def Info: br_BM3D_Gau_40_house.png used on input line 455.
+(pdftex.def)             Requested size: 69.42365pt x 69.4252pt.
+
+<br_PGPD_Gau_40_house.png, id=82, 128.48pt x 128.48pt>
+File: br_PGPD_Gau_40_house.png Graphic file (type png)
+
+<use br_PGPD_Gau_40_house.png>
+Package pdftex.def Info: br_PGPD_Gau_40_house.png used on input line 455.
+(pdftex.def)             Requested size: 69.42365pt x 69.4252pt.
+
+<br_WNNM_Gau_40_house.png, id=83, 128.48pt x 128.48pt>
+File: br_WNNM_Gau_40_house.png Graphic file (type png)
+
+<use br_WNNM_Gau_40_house.png>
+Package pdftex.def Info: br_WNNM_Gau_40_house.png used on input line 482.
+(pdftex.def)             Requested size: 69.42365pt x 69.4252pt.
+
+<br_TwoPhase_Gau_40_house.png, id=84, 128.48pt x 128.48pt>
+File: br_TwoPhase_Gau_40_house.png Graphic file (type png)
+
+<use br_TwoPhase_Gau_40_house.png>
+Package pdftex.def Info: br_TwoPhase_Gau_40_house.png used on input line 482.
+(pdftex.def)             Requested size: 69.42365pt x 69.4252pt.
+
+<br_WESNR_Gau_40_house.png, id=85, 128.48pt x 128.48pt>
+File: br_WESNR_Gau_40_house.png Graphic file (type png)
+
+<use br_WESNR_Gau_40_house.png>
+Package pdftex.def Info: br_WESNR_Gau_40_house.png used on input line 482.
+(pdftex.def)             Requested size: 69.42365pt x 69.4252pt.
+
+<br_NC_Gau_40_house.png, id=86, 128.48pt x 128.48pt>
+File: br_NC_Gau_40_house.png Graphic file (type png)
+
+<use br_NC_Gau_40_house.png>
+Package pdftex.def Info: br_NC_Gau_40_house.png used on input line 482.
+(pdftex.def)             Requested size: 69.42365pt x 69.4252pt.
+
+<br_Ours_Gau_40_house.png, id=87, 128.48pt x 128.48pt>
+File: br_Ours_Gau_40_house.png Graphic file (type png)
+
+<use br_Ours_Gau_40_house.png>
+Package pdftex.def Info: br_Ours_Gau_40_house.png used on input line 482.
+(pdftex.def)             Requested size: 69.42365pt x 69.4252pt.
+
+Overfull \hbox (14.99469pt too wide) in paragraph at lines 455--484
+ [][] 
+ []
+
+
+Overfull \hbox (14.99469pt too wide) in paragraph at lines 455--484
+ [] 
+ []
+
+<br_Original_hill.png, id=88, 256.96pt x 256.96pt>
+File: br_Original_hill.png Graphic file (type png)
+ <use br_Original_hill.png>
+Package pdftex.def Info: br_Original_hill.png used on input line 516.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_Noisy_Gau_50_hill.png, id=89, 256.96pt x 256.96pt>
+File: br_Noisy_Gau_50_hill.png Graphic file (type png)
+
+<use br_Noisy_Gau_50_hill.png>
+Package pdftex.def Info: br_Noisy_Gau_50_hill.png used on input line 516.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_BPFA_Gau_hill_50.png, id=90, 256.96pt x 256.96pt>
+File: br_BPFA_Gau_hill_50.png Graphic file (type png)
+
+<use br_BPFA_Gau_hill_50.png>
+Package pdftex.def Info: br_BPFA_Gau_hill_50.png used on input line 516.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_BM3D_Gau_50_hill.png, id=91, 256.96pt x 256.96pt>
+File: br_BM3D_Gau_50_hill.png Graphic file (type png)
+
+<use br_BM3D_Gau_50_hill.png>
+Package pdftex.def Info: br_BM3D_Gau_50_hill.png used on input line 516.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_PGPD_Gau_50_hill.png, id=92, 256.96pt x 256.96pt>
+File: br_PGPD_Gau_50_hill.png Graphic file (type png)
+
+<use br_PGPD_Gau_50_hill.png>
+Package pdftex.def Info: br_PGPD_Gau_50_hill.png used on input line 516.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_WNNM_Gau_50_hill.png, id=93, 256.96pt x 256.96pt>
+File: br_WNNM_Gau_50_hill.png Graphic file (type png)
+
+<use br_WNNM_Gau_50_hill.png>
+Package pdftex.def Info: br_WNNM_Gau_50_hill.png used on input line 543.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_TwoPhase_Gau_50_hill.png, id=94, 256.96pt x 256.96pt>
+File: br_TwoPhase_Gau_50_hill.png Graphic file (type png)
+
+<use br_TwoPhase_Gau_50_hill.png>
+Package pdftex.def Info: br_TwoPhase_Gau_50_hill.png used on input line 543.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_WESNR_Gau_50_hill.png, id=95, 256.96pt x 256.96pt>
+File: br_WESNR_Gau_50_hill.png Graphic file (type png)
+
+<use br_WESNR_Gau_50_hill.png>
+Package pdftex.def Info: br_WESNR_Gau_50_hill.png used on input line 543.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_NC_Gau_50_hill.png, id=96, 256.96pt x 256.96pt>
+File: br_NC_Gau_50_hill.png Graphic file (type png)
+
+<use br_NC_Gau_50_hill.png>
+Package pdftex.def Info: br_NC_Gau_50_hill.png used on input line 543.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_Ours_Gau_50_hill.png, id=97, 256.96pt x 256.96pt>
+File: br_Ours_Gau_50_hill.png Graphic file (type png)
+
+<use br_Ours_Gau_50_hill.png>
+Package pdftex.def Info: br_Ours_Gau_50_hill.png used on input line 543.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+Overfull \hbox (14.99469pt too wide) in paragraph at lines 516--545
+ [][] 
+ []
+
+
+Overfull \hbox (14.99469pt too wide) in paragraph at lines 516--545
+ [] 
+ []
+
+[9] [10 <./br_Original_house.png (PNG copy)> <./br_Noisy_Gau_40_house.png (PNG 
+copy)> <./br_BPFA_Gau_house_40.png (PNG copy)> <./br_BM3D_Gau_40_house.png (PNG
+ copy)> <./br_PGPD_Gau_40_house.png (PNG copy)> <./br_WNNM_Gau_40_house.png (PN
+G copy)> <./br_TwoPhase_Gau_40_house.png (PNG copy)> <./br_WESNR_Gau_40_house.p
+ng (PNG copy)> <./br_NC_Gau_40_house.png (PNG copy)> <./br_Ours_Gau_40_house.pn
+g (PNG copy)> <./br_Original_hill.png (PNG copy)> <./br_Noisy_Gau_50_hill.png (
+PNG copy)> <./br_BPFA_Gau_hill_50.png (PNG copy)> <./br_BM3D_Gau_50_hill.png (P
+NG copy)> <./br_PGPD_Gau_50_hill.png (PNG copy)> <./br_WNNM_Gau_50_hill.png (PN
+G copy)> <./br_TwoPhase_Gau_50_hill.png (PNG copy)> <./br_WESNR_Gau_50_hill.png
+ (PNG copy)> <./br_NC_Gau_50_hill.png (PNG copy)> <./br_Ours_Gau_50_hill.png (P
+NG copy)>] <br_Original_couple.png, id=105, 256.96pt x 256.96pt>
+File: br_Original_couple.png Graphic file (type png)
+
+<use br_Original_couple.png>
+Package pdftex.def Info: br_Original_couple.png used on input line 643.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_Noisy_GauRVIN_10_015_couple.png, id=106, 256.96pt x 256.96pt>
+File: br_Noisy_GauRVIN_10_015_couple.png Graphic file (type png)
+
+<use br_Noisy_GauRVIN_10_015_couple.png>
+Package pdftex.def Info: br_Noisy_GauRVIN_10_015_couple.png used on input line 
+643.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_BPFA_GauRVIN_10_015_couple.png, id=107, 128.48pt x 128.48pt>
+File: br_BPFA_GauRVIN_10_015_couple.png Graphic file (type png)
+
+<use br_BPFA_GauRVIN_10_015_couple.png>
+Package pdftex.def Info: br_BPFA_GauRVIN_10_015_couple.png used on input line 6
+43.
+(pdftex.def)             Requested size: 69.42365pt x 69.4252pt.
+
+<br_BM3D_GauRVIN_10_015_couple.png, id=108, 256.96pt x 256.96pt>
+File: br_BM3D_GauRVIN_10_015_couple.png Graphic file (type png)
+
+<use br_BM3D_GauRVIN_10_015_couple.png>
+Package pdftex.def Info: br_BM3D_GauRVIN_10_015_couple.png used on input line 6
+43.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_PGPD_GauRVIN_10_015_couple.png, id=109, 128.48pt x 128.48pt>
+File: br_PGPD_GauRVIN_10_015_couple.png Graphic file (type png)
+
+<use br_PGPD_GauRVIN_10_015_couple.png>
+Package pdftex.def Info: br_PGPD_GauRVIN_10_015_couple.png used on input line 6
+43.
+(pdftex.def)             Requested size: 69.42365pt x 69.4252pt.
+
+<br_WNNM_GauRVIN_10_015_couple.png, id=110, 256.96pt x 256.96pt>
+File: br_WNNM_GauRVIN_10_015_couple.png Graphic file (type png)
+
+<use br_WNNM_GauRVIN_10_015_couple.png>
+Package pdftex.def Info: br_WNNM_GauRVIN_10_015_couple.png used on input line 6
+70.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_TwoPhase_GauRVIN_10_015_couple.png, id=111, 256.96pt x 256.96pt>
+File: br_TwoPhase_GauRVIN_10_015_couple.png Graphic file (type png)
+
+<use br_TwoPhase_GauRVIN_10_015_couple.png>
+Package pdftex.def Info: br_TwoPhase_GauRVIN_10_015_couple.png used on input li
+ne 670.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_WESNR_GauRVIN_10_015_couple.png, id=112, 256.96pt x 256.96pt>
+File: br_WESNR_GauRVIN_10_015_couple.png Graphic file (type png)
+
+<use br_WESNR_GauRVIN_10_015_couple.png>
+Package pdftex.def Info: br_WESNR_GauRVIN_10_015_couple.png used on input line 
+670.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_NC_GauRVIN_10_015_couple.png, id=113, 256.96pt x 256.96pt>
+File: br_NC_GauRVIN_10_015_couple.png Graphic file (type png)
+
+<use br_NC_GauRVIN_10_015_couple.png>
+Package pdftex.def Info: br_NC_GauRVIN_10_015_couple.png used on input line 670
+.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_Ours_GauRVIN_10_015_couple.png, id=114, 256.96pt x 256.96pt>
+File: br_Ours_GauRVIN_10_015_couple.png Graphic file (type png)
+
+<use br_Ours_GauRVIN_10_015_couple.png>
+Package pdftex.def Info: br_Ours_GauRVIN_10_015_couple.png used on input line 6
+70.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+Overfull \hbox (14.99469pt too wide) in paragraph at lines 643--671
+ [][] 
+ []
+
+
+Overfull \hbox (14.99469pt too wide) in paragraph at lines 643--671
+ [] 
+ []
+
+<br_Original_barbara2.png, id=115, 256.96pt x 256.96pt>
+File: br_Original_barbara2.png Graphic file (type png)
+
+<use br_Original_barbara2.png>
+Package pdftex.def Info: br_Original_barbara2.png used on input line 703.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_Noisy_GauRVIN_20_015_barbara.png, id=116, 256.96pt x 256.96pt>
+File: br_Noisy_GauRVIN_20_015_barbara.png Graphic file (type png)
+
+<use br_Noisy_GauRVIN_20_015_barbara.png>
+Package pdftex.def Info: br_Noisy_GauRVIN_20_015_barbara.png used on input line
+ 703.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_BPFA_GauRVIN_20_015_barbara.png, id=117, 128.48pt x 128.48pt>
+File: br_BPFA_GauRVIN_20_015_barbara.png Graphic file (type png)
+
+<use br_BPFA_GauRVIN_20_015_barbara.png>
+Package pdftex.def Info: br_BPFA_GauRVIN_20_015_barbara.png used on input line 
+703.
+(pdftex.def)             Requested size: 69.42365pt x 69.4252pt.
+
+<br_BM3D_GauRVIN_20_015_barbara.png, id=118, 256.96pt x 256.96pt>
+File: br_BM3D_GauRVIN_20_015_barbara.png Graphic file (type png)
+
+<use br_BM3D_GauRVIN_20_015_barbara.png>
+Package pdftex.def Info: br_BM3D_GauRVIN_20_015_barbara.png used on input line 
+703.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_PGPD_GauRVIN_20_015_barbara.png, id=119, 128.48pt x 128.48pt>
+File: br_PGPD_GauRVIN_20_015_barbara.png Graphic file (type png)
+
+<use br_PGPD_GauRVIN_20_015_barbara.png>
+Package pdftex.def Info: br_PGPD_GauRVIN_20_015_barbara.png used on input line 
+703.
+(pdftex.def)             Requested size: 69.42365pt x 69.4252pt.
+
+<br_WNNM_GauRVIN_20_015_barbara.png, id=120, 256.96pt x 256.96pt>
+File: br_WNNM_GauRVIN_20_015_barbara.png Graphic file (type png)
+
+<use br_WNNM_GauRVIN_20_015_barbara.png>
+Package pdftex.def Info: br_WNNM_GauRVIN_20_015_barbara.png used on input line 
+730.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_TwoPhase_GauRVIN_20_015_barbara.png, id=121, 256.96pt x 256.96pt>
+File: br_TwoPhase_GauRVIN_20_015_barbara.png Graphic file (type png)
+
+<use br_TwoPhase_GauRVIN_20_015_barbara.png>
+Package pdftex.def Info: br_TwoPhase_GauRVIN_20_015_barbara.png used on input l
+ine 730.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_WESNR_GauRVIN_20_015_barbara.png, id=122, 256.96pt x 256.96pt>
+File: br_WESNR_GauRVIN_20_015_barbara.png Graphic file (type png)
+
+<use br_WESNR_GauRVIN_20_015_barbara.png>
+Package pdftex.def Info: br_WESNR_GauRVIN_20_015_barbara.png used on input line
+ 730.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_NC_GauRVIN_20_015_barbara.png, id=123, 256.96pt x 256.96pt>
+File: br_NC_GauRVIN_20_015_barbara.png Graphic file (type png)
+
+<use br_NC_GauRVIN_20_015_barbara.png>
+Package pdftex.def Info: br_NC_GauRVIN_20_015_barbara.png used on input line 73
+0.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+<br_Ours_GauRVIN_20_015_barbara.png, id=124, 256.96pt x 256.96pt>
+File: br_Ours_GauRVIN_20_015_barbara.png Graphic file (type png)
+
+<use br_Ours_GauRVIN_20_015_barbara.png>
+Package pdftex.def Info: br_Ours_GauRVIN_20_015_barbara.png used on input line 
+730.
+(pdftex.def)             Requested size: 69.42365pt x 69.42325pt.
+
+Overfull \hbox (14.99469pt too wide) in paragraph at lines 703--731
+ [][] 
+ []
+
+
+Overfull \hbox (14.99469pt too wide) in paragraph at lines 703--731
+ [] 
+ []
+
+[11] [12 <./br_Original_couple.png (PNG copy)> <./br_Noisy_GauRVIN_10_015_coupl
+e.png (PNG copy)> <./br_BPFA_GauRVIN_10_015_couple.png (PNG copy)> <./br_BM3D_G
+auRVIN_10_015_couple.png (PNG copy)> <./br_PGPD_GauRVIN_10_015_couple.png (PNG 
+copy)> <./br_WNNM_GauRVIN_10_015_couple.png (PNG copy)> <./br_TwoPhase_GauRVIN_
+10_015_couple.png (PNG copy)> <./br_WESNR_GauRVIN_10_015_couple.png (PNG copy)>
+ <./br_NC_GauRVIN_10_015_couple.png (PNG copy)> <./br_Ours_GauRVIN_10_015_coupl
+e.png (PNG copy)> <./br_Original_barbara2.png (PNG copy)> <./br_Noisy_GauRVIN_2
+0_015_barbara.png (PNG copy)> <./br_BPFA_GauRVIN_20_015_barbara.png (PNG copy)>
+ <./br_BM3D_GauRVIN_20_015_barbara.png (PNG copy)> <./br_PGPD_GauRVIN_20_015_ba
+rbara.png (PNG copy)> <./br_WNNM_GauRVIN_20_015_barbara.png (PNG copy)> <./br_T
+woPhase_GauRVIN_20_015_barbara.png (PNG copy)> <./br_WESNR_GauRVIN_20_015_barba
+ra.png (PNG copy)> <./br_NC_GauRVIN_20_015_barbara.png (PNG copy)> <./br_Ours_G
+auRVIN_20_015_barbara.png (PNG copy)>]
+<resize_br_Real_SolvayConf1927.png, id=132, 401.5pt x 301.125pt>
+File: resize_br_Real_SolvayConf1927.png Graphic file (type png)
+
+<use resize_br_Real_SolvayConf1927.png>
+Package pdftex.def Info: resize_br_Real_SolvayConf1927.png used on input line 7
+65.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_BPFA_Real_Real_SolvayConf1927.png, id=133, 401.5pt x 301.125pt>
+File: resize_br_BPFA_Real_Real_SolvayConf1927.png Graphic file (type png)
+
+<use resize_br_BPFA_Real_Real_SolvayConf1927.png>
+Package pdftex.def Info: resize_br_BPFA_Real_Real_SolvayConf1927.png used on in
+put line 765.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_BM3D_Real_SolvayConf1927.png, id=134, 401.5pt x 301.125pt>
+File: resize_br_BM3D_Real_SolvayConf1927.png Graphic file (type png)
+
+<use resize_br_BM3D_Real_SolvayConf1927.png>
+Package pdftex.def Info: resize_br_BM3D_Real_SolvayConf1927.png used on input l
+ine 765.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_PGPD_Real_SolvayConf1927.png, id=135, 401.5pt x 301.125pt>
+File: resize_br_PGPD_Real_SolvayConf1927.png Graphic file (type png)
+
+<use resize_br_PGPD_Real_SolvayConf1927.png>
+Package pdftex.def Info: resize_br_PGPD_Real_SolvayConf1927.png used on input l
+ine 765.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_WESNR_Real_SolvayConf1927.png, id=136, 401.5pt x 301.125pt>
+File: resize_br_WESNR_Real_SolvayConf1927.png Graphic file (type png)
+
+<use resize_br_WESNR_Real_SolvayConf1927.png>
+Package pdftex.def Info: resize_br_WESNR_Real_SolvayConf1927.png used on input 
+line 787.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_NC_Real_SolvayConf1927.png, id=137, 401.5pt x 301.125pt>
+File: resize_br_NC_Real_SolvayConf1927.png Graphic file (type png)
+
+<use resize_br_NC_Real_SolvayConf1927.png>
+Package pdftex.def Info: resize_br_NC_Real_SolvayConf1927.png used on input lin
+e 787.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_NI_Real_SolvayConf1927.png, id=138, 401.5pt x 301.125pt>
+File: resize_br_NI_Real_SolvayConf1927.png Graphic file (type png)
+
+<use resize_br_NI_Real_SolvayConf1927.png>
+Package pdftex.def Info: resize_br_NI_Real_SolvayConf1927.png used on input lin
+e 787.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_Ours_Real_SolvayConf1927.png, id=139, 401.5pt x 301.125pt>
+File: resize_br_Ours_Real_SolvayConf1927.png Graphic file (type png)
+
+<use resize_br_Ours_Real_SolvayConf1927.png>
+Package pdftex.def Info: resize_br_Ours_Real_SolvayConf1927.png used on input l
+ine 787.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 765--788
+ [][] 
+ []
+
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 765--788
+ [] 
+ []
+
+<resize_br_Real_Niaochaogirls.png, id=140, 401.5pt x 301.125pt>
+File: resize_br_Real_Niaochaogirls.png Graphic file (type png)
+
+<use resize_br_Real_Niaochaogirls.png>
+Package pdftex.def Info: resize_br_Real_Niaochaogirls.png used on input line 81
+6.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_BPFA_Real_Niaochaogirls.png, id=141, 401.5pt x 301.125pt>
+File: resize_br_BPFA_Real_Niaochaogirls.png Graphic file (type png)
+
+<use resize_br_BPFA_Real_Niaochaogirls.png>
+Package pdftex.def Info: resize_br_BPFA_Real_Niaochaogirls.png used on input li
+ne 816.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_BM3D_Real_Niaochaogirls.png, id=142, 401.5pt x 301.125pt>
+File: resize_br_BM3D_Real_Niaochaogirls.png Graphic file (type png)
+
+<use resize_br_BM3D_Real_Niaochaogirls.png>
+Package pdftex.def Info: resize_br_BM3D_Real_Niaochaogirls.png used on input li
+ne 816.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_PGPD_Real_Niaochaogirls.png, id=143, 401.5pt x 301.125pt>
+File: resize_br_PGPD_Real_Niaochaogirls.png Graphic file (type png)
+
+<use resize_br_PGPD_Real_Niaochaogirls.png>
+Package pdftex.def Info: resize_br_PGPD_Real_Niaochaogirls.png used on input li
+ne 816.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_WESNR_Real_Niaochaogirls.png, id=144, 401.5pt x 301.125pt>
+File: resize_br_WESNR_Real_Niaochaogirls.png Graphic file (type png)
+
+<use resize_br_WESNR_Real_Niaochaogirls.png>
+Package pdftex.def Info: resize_br_WESNR_Real_Niaochaogirls.png used on input l
+ine 838.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_NC_Real_Niaochaogirls.png, id=145, 401.5pt x 301.125pt>
+File: resize_br_NC_Real_Niaochaogirls.png Graphic file (type png)
+
+<use resize_br_NC_Real_Niaochaogirls.png>
+Package pdftex.def Info: resize_br_NC_Real_Niaochaogirls.png used on input line
+ 838.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_NI_Real_Niaochaogirls.png, id=146, 401.5pt x 301.125pt>
+File: resize_br_NI_Real_Niaochaogirls.png Graphic file (type png)
+
+<use resize_br_NI_Real_Niaochaogirls.png>
+Package pdftex.def Info: resize_br_NI_Real_Niaochaogirls.png used on input line
+ 838.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_Ours_Real_Niaochaogirls.png, id=147, 401.5pt x 301.125pt>
+File: resize_br_Ours_Real_Niaochaogirls.png Graphic file (type png)
+
+<use resize_br_Ours_Real_Niaochaogirls.png>
+Package pdftex.def Info: resize_br_Ours_Real_Niaochaogirls.png used on input li
+ne 838.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 816--839
+ [][] 
+ []
+
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 816--839
+ [] 
+ []
+
+<resize_br_Real_windmill.png, id=148, 401.5pt x 301.125pt>
+File: resize_br_Real_windmill.png Graphic file (type png)
+
+<use resize_br_Real_windmill.png>
+Package pdftex.def Info: resize_br_Real_windmill.png used on input line 866.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_BPFA_Real_windmill.png, id=149, 401.5pt x 301.125pt>
+File: resize_br_BPFA_Real_windmill.png Graphic file (type png)
+
+<use resize_br_BPFA_Real_windmill.png>
+Package pdftex.def Info: resize_br_BPFA_Real_windmill.png used on input line 86
+6.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_BM3D_Real_windmill.png, id=150, 401.5pt x 301.125pt>
+File: resize_br_BM3D_Real_windmill.png Graphic file (type png)
+
+<use resize_br_BM3D_Real_windmill.png>
+Package pdftex.def Info: resize_br_BM3D_Real_windmill.png used on input line 86
+6.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_PGPD_Real_windmill.png, id=151, 401.5pt x 301.125pt>
+File: resize_br_PGPD_Real_windmill.png Graphic file (type png)
+
+<use resize_br_PGPD_Real_windmill.png>
+Package pdftex.def Info: resize_br_PGPD_Real_windmill.png used on input line 86
+6.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_WESNR_Real_windmill.png, id=152, 401.5pt x 301.125pt>
+File: resize_br_WESNR_Real_windmill.png Graphic file (type png)
+
+<use resize_br_WESNR_Real_windmill.png>
+Package pdftex.def Info: resize_br_WESNR_Real_windmill.png used on input line 8
+88.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_NC_Real_windmill.png, id=153, 401.5pt x 301.125pt>
+File: resize_br_NC_Real_windmill.png Graphic file (type png)
+
+<use resize_br_NC_Real_windmill.png>
+Package pdftex.def Info: resize_br_NC_Real_windmill.png used on input line 888.
+
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_NI_Real_windmill.png, id=154, 401.5pt x 301.125pt>
+File: resize_br_NI_Real_windmill.png Graphic file (type png)
+
+<use resize_br_NI_Real_windmill.png>
+Package pdftex.def Info: resize_br_NI_Real_windmill.png used on input line 888.
+
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+<resize_br_Ours_Real_windmill.png, id=155, 401.5pt x 301.125pt>
+File: resize_br_Ours_Real_windmill.png Graphic file (type png)
+
+<use resize_br_Ours_Real_windmill.png>
+Package pdftex.def Info: resize_br_Ours_Real_windmill.png used on input line 88
+8.
+(pdftex.def)             Requested size: 86.78088pt x 65.08522pt.
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 866--889
+ [][] 
+ []
+
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 866--889
+ [] 
+ []
+
+(./W10-02.bbl [13 <./resize_br_Real_SolvayConf1927.png (PNG copy)> <./resize_br
+_BPFA_Real_Real_SolvayConf1927.png (PNG copy)> <./resize_br_BM3D_Real_SolvayCon
+f1927.png (PNG copy)> <./resize_br_PGPD_Real_SolvayConf1927.png (PNG copy)> <./
+resize_br_WESNR_Real_SolvayConf1927.png (PNG copy)> <./resize_br_NC_Real_Solvay
+Conf1927.png (PNG copy)> <./resize_br_NI_Real_SolvayConf1927.png (PNG copy)> <.
+/resize_br_Ours_Real_SolvayConf1927.png (PNG copy)>] [14 <./resize_br_Real_Niao
+chaogirls.png (PNG copy)> <./resize_br_BPFA_Real_Niaochaogirls.png (PNG copy)> 
+<./resize_br_BM3D_Real_Niaochaogirls.png (PNG copy)> <./resize_br_PGPD_Real_Nia
+ochaogirls.png (PNG copy)> <./resize_br_WESNR_Real_Niaochaogirls.png (PNG copy)
+> <./resize_br_NC_Real_Niaochaogirls.png (PNG copy)> <./resize_br_NI_Real_Niaoc
+haogirls.png (PNG copy)> <./resize_br_Ours_Real_Niaochaogirls.png (PNG copy)> <
+./resize_br_Real_windmill.png (PNG copy)> <./resize_br_BPFA_Real_windmill.png (
+PNG copy)> <./resize_br_BM3D_Real_windmill.png (PNG copy)> <./resize_br_PGPD_Re
+al_windmill.png (PNG copy)> <./resize_br_WESNR_Real_windmill.png (PNG copy)> <.
+/resize_br_NC_Real_windmill.png (PNG copy)> <./resize_br_NI_Real_windmill.png (
+PNG copy)> <./resize_br_Ours_Real_windmill.png (PNG copy)>]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+ [15]) [16]
+(./W10-02.aux) ) 
+Here is how much of TeX's memory you used:
+ 11098 strings out of 493091
+ 201750 string characters out of 6134517
+ 227684 words of memory out of 5000000
+ 14362 multiletter control sequences out of 15000+600000
+ 28441 words of font info for 75 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,19n,42p,10384b,355s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/Software/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.en
+c}<c:/Software/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b><c:/Software/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pf
+b><c:/Software/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b><c:/Software/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+><c:/Software/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb>
+<c:/Software/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
+c:/Software/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c
+:/Software/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><
+c:/Software/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c
+:/Software/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/
+Software/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/So
+ftware/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Soft
+ware/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/Softwa
+re/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Softwa
+re/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/Softwar
+e/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb><c:/Soft
+ware/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:
+/Software/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pf
+b><c:/Software/texlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/S
+oftware/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/Software/t
+exlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/Software/texlive/20
+15/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on W10-02.pdf (16 pages, 9084223 bytes).
+PDF statistics:
+ 240 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 471 words of extra memory for PDF output out of 10000 (max. 10000000)
+
