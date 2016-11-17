@@ -1,0 +1,45 @@
+\begin{thebibliography}{1}
+
+\bibitem{bm3d}
+Dabov, K., Foi, A., Katkovnik, V., Egiazarian, K.:
+\newblock Image denoising by sparse 3-{D} transform-domain collaborative
+  filtering.
+\newblock Image Processing, IEEE Transactions on \textbf{16}(8) (2007)
+  2080--2095
+
+\bibitem{wnnm}
+Gu, S., Zhang, L., Zuo, W., Feng, X.:
+\newblock Weighted nuclear norm minimization with application to image
+  denoising.
+\newblock CVPR (2014)  2862--2869
+
+\bibitem{cai2010fast}
+Cai, J.F., Chan, R.H., Nikolova, M.:
+\newblock Fast two-phase image deblurring under impulse noise.
+\newblock Journal of Mathematical Imaging and Vision \textbf{36}(1) (2010)
+  46--53
+
+\bibitem{wesnr}
+Jiang, J., Zhang, L., Yang, J.:
+\newblock Mixed noise removal by weighted encoding with sparse nonlocal
+  regularization.
+\newblock Image Processing, IEEE Transactions on \textbf{23}(6) (2014)
+  2651--2662
+
+\bibitem{noiseclinic}
+Lebrun, M., Colom, M., Morel, J.M.:
+\newblock Multiscale image blind denoising.
+\newblock Image Processing, IEEE Transactions on \textbf{24}(10) (2015)
+  3149--3161
+
+\bibitem{neatimage}
+ABSoft, N.:
+\newblock Neat image.
+\newblock \url{https://ni.neatvideo.com/home}
+
+\bibitem{ncwebsite}
+Lebrun, M., Colom, M., Morel, J.M.:
+\newblock The noise clinic: a blind image denoising algorithm.
+\newblock \url{http://www.ipol.im/pub/art/2015/125/} Accessed 01 28, 2015.
+
+\end{thebibliography}
